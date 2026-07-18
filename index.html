@@ -76,6 +76,14 @@
   .range-btns button.active { background: var(--accent); color: #04342C; border-color: var(--accent); }
 
   .empty { background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 28px; text-align: center; color: var(--text-muted); font-size: 14px; }
+
+  .ftable { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .ftable th, .ftable td { padding: 8px 12px; text-align: center; white-space: nowrap; }
+  .ftable th { color: var(--text-muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .ftable th:first-child, .ftable td:first-child { text-align: left; }
+  .ftable td.peak { background: var(--surface-2); border-radius: 6px; font-family: 'IBM Plex Mono', monospace; }
+  .ftable td { font-family: 'IBM Plex Mono', monospace; }
+  .ftable .chname { font-family: 'Inter', sans-serif; display: flex; align-items: center; gap: 8px; }
   footer { color: var(--text-muted); font-size: 12px; line-height: 1.6; border-top: 1px solid var(--border); padding-top: 16px; }
 </style>
 </head>
@@ -130,6 +138,13 @@
     </div>
   </div>
 
+  <section>
+    <div class="chart-card">
+      <h2>Audiencias por franjas horarias</h2>
+      <div id="franjasTable" style="overflow-x:auto"></div>
+    </div>
+  </section>
+
   <footer>
     Fuente: publicaciones diarias de FormulaTV. Proyecto personal sin afiliación con la medición oficial (Kantar/Fifty5Blue).
   </footer>
@@ -141,11 +156,40 @@ let ALL_DAYS = [];
 let currentRangeDays = 30;
 let chartInstance = null;
 
-const PALETTE = ['#2FD3B0', '#F2A93B', '#7F77DD', '#D4537E', '#378ADD', '#639922', '#BA7517', '#993556'];
+// Colores fijos para las cadenas principales, elegidos para distinguirse bien entre sí
+// (deliberadamente no son los colores de marca real, para no crear confusión de identidad).
+const CHANNEL_COLORS = {
+  'La 1': '#2FD3B0',
+  'Antena 3': '#F2A93B',
+  'Telecinco': '#7F77DD',
+  'Cuatro': '#D4537E',
+  'laSexta': '#378ADD',
+  'La 2': '#63C979',
+  'FDF': '#BA7517',
+  'Nova': '#E2716B',
+  'Trece': '#8C8C94',
+  'Energy': '#C97BD9',
+  'Neox': '#4FB8C4',
+  'Atreseries': '#D99A3B',
+  'DMAX': '#5A8FD6',
+  'DKiss': '#C4657A',
+  'BeMad': '#7BC48A',
+  'Teledeporte': '#4A90D9',
+  'Mega': '#B08968',
+  'Veo7': '#9B8AC4',
+  'Boing': '#E0A458',
+  'Ten': '#6BA5A0',
+  'Divinity': '#D46B9E',
+  'Clan TVE': '#7FBF7F',
+  'Real Madrid TV': '#8AAED6',
+  'Canal 24 Horas': '#9A9A9A',
+};
+const FALLBACK_PALETTE = ['#2FD3B0', '#F2A93B', '#7F77DD', '#D4537E', '#378ADD', '#639922', '#BA7517', '#993556'];
 function colorFor(name) {
+  if (CHANNEL_COLORS[name]) return CHANNEL_COLORS[name];
   let h = 0;
   for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
-  return PALETTE[h % PALETTE.length];
+  return FALLBACK_PALETTE[h % FALLBACK_PALETTE.length];
 }
 function initials(name) {
   return name.replace(/[^A-Za-zÀ-ÿ0-9 ]/g, '').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
@@ -285,7 +329,61 @@ document.getElementById('rangeBtns').addEventListener('click', (e) => {
 });
 document.querySelector('#rangeBtns button[data-days="30"]').classList.add('active');
 
-loadData();
+const FRANJA_ORDER = ["Madrugada", "Mañana", "Sobremesa", "Tarde", "Prime time", "Late night"];
+
+async function loadFranjas() {
+  try {
+    const res = await fetch('./data/history-franjas.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('no franjas yet');
+    const days = await res.json();
+    if (!days.length) throw new Error('empty');
+    renderFranjas(days[days.length - 1]);
+  } catch (e) {
+    document.getElementById('franjasTable').innerHTML =
+      '<div class="empty">Aún no hay datos de franjas horarias.</div>';
+  }
+}
+
+function renderFranjas(dayFranjas) {
+  const byFranja = {};
+  dayFranjas.franjas.forEach(f => { byFranja[f.franja] = f.cuotas; });
+
+  const totalDia = {};
+  const lastMain = ALL_DAYS.find(d => d.fecha === dayFranjas.fecha);
+  if (lastMain) lastMain.canales.forEach(c => { totalDia[c.cadena] = c.cuota; });
+
+  const allNames = new Set();
+  Object.values(byFranja).forEach(cuotas => Object.keys(cuotas).forEach(n => allNames.add(n)));
+
+  const rows = [...allNames].sort((a, b) => (totalDia[b] ?? -1) - (totalDia[a] ?? -1));
+  const columns = ['Total día', ...FRANJA_ORDER];
+
+  // Máximo por columna, para resaltar la celda líder
+  const colMax = {};
+  columns.forEach(col => {
+    const vals = rows.map(name => col === 'Total día' ? totalDia[name] : byFranja[col]?.[name])
+      .filter(v => v != null);
+    colMax[col] = vals.length ? Math.max(...vals) : null;
+  });
+
+  let html = '<table class="ftable"><thead><tr><th>Cadena</th>' +
+    columns.map(c => `<th>${c}</th>`).join('') + '</tr></thead><tbody>';
+
+  rows.forEach(name => {
+    html += `<tr><td class="chname">${pill(name)} ${name}</td>`;
+    columns.forEach(col => {
+      const val = col === 'Total día' ? totalDia[name] : byFranja[col]?.[name];
+      const cls = (val != null && colMax[col] != null && Math.abs(val - colMax[col]) < 0.001) ? 'peak' : '';
+      html += `<td class="${cls}">${val != null ? val.toFixed(1) + '%' : '–'}</td>`;
+    });
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+  document.getElementById('franjasTable').innerHTML = html;
+}
+
+loadData().then(loadFranjas);
 </script>
 </body>
 </html>
