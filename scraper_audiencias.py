@@ -74,6 +74,58 @@ def fetch_day(day: date) -> list[dict]:
     return results
 
 
+FRANJAS_URL = "https://www.formulatv.com/audiencias/{date}/franjas/"
+
+# Claves del chartData embebido en la página de franjas -> nombre legible de cadena/grupo
+FRANJA_KEYS = {
+    "CuotaLa1": "La 1",
+    "CuotaLa2": "La 2",
+    "CuotaA3": "Antena 3",
+    "CuotaT5": "Telecinco",
+    "CuotaCuatro": "Cuatro",
+    "CuotaLa6": "laSexta",
+    "AutPub": "Autonómicas públicas",
+    "AutPriv": "Autonómicas privadas",
+    "TemTDT": "Temáticas TDT",
+    "TemPago": "Temáticas de pago",
+}
+
+CHARTDATA_RE = re.compile(r"var\s+chartData\s*=\s*(\[[\s\S]*?\]);")
+
+
+def fetch_franjas(day: date) -> list[dict]:
+    """Descarga el desglose de audiencia por franja horaria (Madrugada, Mañana, etc.)."""
+    url = FRANJAS_URL.format(date=day.isoformat())
+    resp = requests.get(url, headers=HEADERS, timeout=15)
+    resp.raise_for_status()
+    html = resp.text
+
+    match = CHARTDATA_RE.search(html)
+    if not match:
+        return []
+
+    raw = json.loads(match.group(1))
+    franjas = []
+    for row in raw:
+        cuotas = {}
+        for key, name in FRANJA_KEYS.items():
+            val = row.get(key, "")
+            if val not in ("", None):
+                cuotas[name] = float(val)
+        franjas.append({"franja": row.get("hora", ""), "cuotas": cuotas})
+    return franjas
+
+
+def save_franjas(day: date, franjas: list[dict]) -> None:
+    if not franjas:
+        return
+    dir_path = DATA_DIR / "franjas"
+    dir_path.mkdir(parents=True, exist_ok=True)
+    path = dir_path / f"{day.isoformat()}.json"
+    payload = {"fecha": day.isoformat(), "franjas": franjas}
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def save_day(day: date, data: list[dict]) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     path = DATA_DIR / f"{day.isoformat()}.json"
@@ -93,6 +145,19 @@ def rebuild_history() -> None:
     history_path.write_text(json.dumps(days, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"history.json reconstruido con {len(days)} días")
 
+    franjas_dir = DATA_DIR / "franjas"
+    if franjas_dir.exists():
+        franja_days = []
+        for f in sorted(franjas_dir.glob("????-??-??.json")):
+            try:
+                franja_days.append(json.loads(f.read_text(encoding="utf-8")))
+            except Exception:
+                continue
+        (DATA_DIR / "history-franjas.json").write_text(
+            json.dumps(franja_days, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"history-franjas.json reconstruido con {len(franja_days)} días")
+
 
 def backfill(start: date, end: date) -> None:
     d = start
@@ -105,7 +170,20 @@ def backfill(start: date, end: date) -> None:
             else:
                 print(f"{d}: sin datos (¿estructura de página distinta?)")
         except Exception as e:
-            print(f"{d}: error -> {e}")
+            print(f"{d}: error (cadenas) -> {e}")
+
+        time.sleep(1)
+
+        try:
+            franjas = fetch_franjas(d)
+            if franjas:
+                save_franjas(d, franjas)
+                print(f"{d}: franjas guardadas")
+            else:
+                print(f"{d}: sin datos de franjas")
+        except Exception as e:
+            print(f"{d}: error (franjas) -> {e}")
+
         time.sleep(1.5)
         d += timedelta(days=1)
     rebuild_history()
