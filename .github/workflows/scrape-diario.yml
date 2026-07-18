@@ -2,8 +2,10 @@ name: Scrape diario de audiencias
 
 on:
   schedule:
+    # 09:30 UTC = 11:30 en verano (CEST) / 10:30 en invierno (CET) en España.
+    # Da margen de sobra tras la publicación de datos de las 9:00h.
     - cron: "30 9 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch: {}   # permite lanzarlo a mano desde la pestaña "Actions"
 
 permissions:
   contents: write
@@ -32,4 +34,5 @@ jobs:
           git config user.email "audiencias-bot@users.noreply.github.com"
           git add data/
           git diff --cached --quiet || git commit -m "Datos de audiencias: $(date +'%Y-%m-%d')"
+          git pull --rebase origin main
           git push
