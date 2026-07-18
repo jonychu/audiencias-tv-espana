@@ -1,0 +1,42 @@
+name: Relleno histórico de audiencias
+
+on:
+  workflow_dispatch:
+    inputs:
+      fecha_inicio:
+        description: "Fecha de inicio (AAAA-MM-DD)"
+        required: true
+        default: "2026-07-01"
+      fecha_fin:
+        description: "Fecha de fin (AAAA-MM-DD)"
+        required: true
+        default: "2026-07-16"
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Ejecutar el scraper para el rango indicado
+        run: python scraper_audiencias.py "${{ github.event.inputs.fecha_inicio }}" "${{ github.event.inputs.fecha_fin }}"
+
+      - name: Publicar los datos nuevos
+        run: |
+          git config user.name "audiencias-bot"
+          git config user.email "audiencias-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Relleno histórico: ${{ github.event.inputs.fecha_inicio }} a ${{ github.event.inputs.fecha_fin }}"
+          git push
