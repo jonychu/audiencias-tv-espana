@@ -16,18 +16,14 @@
     --text-muted: #8891A3;
     --accent: #2FD3B0;
     --live: #E24B4A;
+    --up: #63C979;
+    --down: #E2716B;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
-    padding: 28px 20px 64px;
-  }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; padding: 28px 20px 64px; }
   .wrap { max-width: 1180px; margin: 0 auto; }
 
-  header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+  header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; }
   .titleblock h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 26px; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
   .titleblock p { margin: 0; font-size: 13px; color: var(--text-muted); }
   .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--live); display: inline-block; }
@@ -39,7 +35,12 @@
   .badge .label { font-size: 11px; color: var(--text-muted); margin-bottom: 4px; }
   .badge .value { font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; }
 
-  .layout { display: grid; grid-template-columns: 1fr 320px; gap: 20px; align-items: start; }
+  .highlight { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 13px; display: flex; gap: 24px; flex-wrap: wrap; }
+  .highlight b { font-family: 'Space Grotesk', sans-serif; }
+  .highlight .up { color: var(--up); }
+  .highlight .down { color: var(--down); }
+
+  .layout { display: grid; grid-template-columns: 1fr 340px; gap: 20px; align-items: start; }
   @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
 
   section { margin-bottom: 28px; }
@@ -47,33 +48,34 @@
 
   .top5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+  .card .head-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .pill { width: 26px; height: 26px; border-radius: 7px; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; flex-shrink: 0; }
   .card .rank { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-muted); }
-  .card .name { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; margin: 6px 0 8px; }
+  .card .name { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; }
+  .card .share-row { display: flex; align-items: baseline; gap: 8px; }
   .card .share { font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: var(--accent); }
+  .card .delta { font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
   .card .bar-track { margin-top: 10px; background: var(--surface-2); border-radius: 4px; height: 5px; overflow: hidden; }
   .card .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
 
   .sidebar-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
-  .bar-row { display: grid; grid-template-columns: 96px 1fr 48px; align-items: center; gap: 10px; padding: 6px 0; }
-  .bar-row .label { font-size: 13px; }
-  .bar-track { background: var(--surface-2); border-radius: 4px; height: 7px; overflow: hidden; }
+  .bar-row { display: grid; grid-template-columns: 22px 78px 60px 1fr 46px; align-items: center; gap: 8px; padding: 7px 0; }
+  .bar-row .label { font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-row .delta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-align: right; }
+  .bar-track { background: var(--surface-2); border-radius: 4px; height: 6px; overflow: hidden; }
   .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
-  .bar-row .value { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-muted); text-align: right; }
+  .bar-row .value { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-muted); text-align: right; }
+  .spark { display: block; }
 
   .info-card { margin-top: 16px; font-size: 13px; color: var(--text-muted); line-height: 1.6; }
-  .info-card a { color: var(--accent); }
 
   .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
   .chart-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
   .range-btns { display: flex; gap: 6px; }
-  .range-btns button {
-    background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border);
-    border-radius: 6px; padding: 5px 12px; font-size: 12px; font-family: 'IBM Plex Mono', monospace; cursor: pointer;
-  }
+  .range-btns button { background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; font-size: 12px; font-family: 'IBM Plex Mono', monospace; cursor: pointer; }
   .range-btns button.active { background: var(--accent); color: #04342C; border-color: var(--accent); }
 
   .empty { background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 28px; text-align: center; color: var(--text-muted); font-size: 14px; }
-
   footer { color: var(--text-muted); font-size: 12px; line-height: 1.6; border-top: 1px solid var(--border); padding-top: 16px; }
 </style>
 </head>
@@ -90,6 +92,8 @@
       <div class="badge"><div class="label">Última jornada</div><div class="value" id="badge-last">–</div></div>
     </div>
   </header>
+
+  <div class="highlight" id="highlight"></div>
 
   <div class="layout">
     <div>
@@ -137,6 +141,44 @@ let ALL_DAYS = [];
 let currentRangeDays = 30;
 let chartInstance = null;
 
+const PALETTE = ['#2FD3B0', '#F2A93B', '#7F77DD', '#D4537E', '#378ADD', '#639922', '#BA7517', '#993556'];
+function colorFor(name) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
+  return PALETTE[h % PALETTE.length];
+}
+function initials(name) {
+  return name.replace(/[^A-Za-zÀ-ÿ0-9 ]/g, '').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+}
+function pill(name) {
+  const c = colorFor(name);
+  return `<div class="pill" style="background:${c}22;color:${c};border:1px solid ${c}55">${initials(name)}</div>`;
+}
+function deltaHtml(cur, prev) {
+  if (prev == null) return '<span class="delta" style="color:var(--text-muted)">—</span>';
+  const d = cur - prev;
+  const cls = d > 0.05 ? 'up' : d < -0.05 ? 'down' : '';
+  const arrow = d > 0.05 ? '▲' : d < -0.05 ? '▼' : '–';
+  const color = cls === 'up' ? 'var(--up)' : cls === 'down' ? 'var(--down)' : 'var(--text-muted)';
+  return `<span class="delta" style="color:${color}">${arrow} ${Math.abs(d).toFixed(1)}</span>`;
+}
+function sparkline(name, days) {
+  const vals = days.map(d => (d.canales.find(c => c.cadena === name) || {}).cuota);
+  const clean = vals.filter(v => v != null);
+  if (clean.length < 2) return '';
+  const max = Math.max(...clean), min = Math.min(...clean);
+  const range = (max - min) || 1;
+  const w = 56, h = 20, n = vals.length;
+  const pts = vals.map((v, i) => {
+    if (v == null) return null;
+    const x = (i / (n - 1)) * w;
+    const y = h - ((v - min) / range) * h;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).filter(Boolean).join(' ');
+  const color = colorFor(name);
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
 async function loadData() {
   try {
     const res = await fetch('./data/history.json', { cache: 'no-store' });
@@ -154,6 +196,9 @@ async function loadData() {
 
 function render() {
   const last = ALL_DAYS[ALL_DAYS.length - 1];
+  const prevDay = ALL_DAYS.length > 1 ? ALL_DAYS[ALL_DAYS.length - 2] : null;
+  const prevOf = name => prevDay ? (prevDay.canales.find(c => c.cadena === name) || {}).cuota : null;
+
   document.getElementById('subtitle').textContent = 'Publicaciones diarias de audiencia, España';
   document.getElementById('badge-days').textContent = ALL_DAYS.length;
   document.getElementById('badge-last').textContent = last.fecha;
@@ -161,19 +206,37 @@ function render() {
   const sorted = [...last.canales].sort((a, b) => b.cuota - a.cuota);
   const maxShare = sorted[0]?.cuota || 1;
 
+  if (prevDay) {
+    const deltas = last.canales
+      .map(c => ({ name: c.cadena, delta: c.cuota - (prevOf(c.cadena) ?? c.cuota) }))
+      .filter(d => prevOf(d.name) != null);
+    if (deltas.length) {
+      const riser = deltas.reduce((a, b) => (b.delta > a.delta ? b : a));
+      const faller = deltas.reduce((a, b) => (b.delta < a.delta ? b : a));
+      document.getElementById('highlight').innerHTML = `
+        <div><b class="up">▲ Mayor subida:</b> ${riser.name} (${riser.delta > 0 ? '+' : ''}${riser.delta.toFixed(1)} pts)</div>
+        <div><b class="down">▼ Mayor bajada:</b> ${faller.name} (${faller.delta.toFixed(1)} pts)</div>
+      `;
+    }
+  } else {
+    document.getElementById('highlight').innerHTML = '<div>Primer día registrado — mañana empezaremos a ver variaciones.</div>';
+  }
+
   document.getElementById('top5').innerHTML = sorted.slice(0, 5).map((c, i) => `
     <div class="card">
-      <div class="rank">#${i + 1}</div>
-      <div class="name">${c.cadena}</div>
-      <div class="share">${c.cuota.toFixed(1)}%</div>
-      <div class="bar-track"><div class="bar-fill" style="width:${(c.cuota / maxShare * 100).toFixed(1)}%"></div></div>
+      <div class="head-row">${pill(c.cadena)}<div><div class="rank">#${i + 1}</div><div class="name">${c.cadena}</div></div></div>
+      <div class="share-row"><span class="share">${c.cuota.toFixed(1)}%</span>${deltaHtml(c.cuota, prevOf(c.cadena))}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(c.cuota / maxShare * 100).toFixed(1)}%; background:${colorFor(c.cadena)}"></div></div>
     </div>
   `).join('');
 
+  const sparkDays = ALL_DAYS.slice(-14);
   document.getElementById('bars').innerHTML = sorted.map(c => `
     <div class="bar-row">
+      ${pill(c.cadena).replace('26px', '20px')}
       <div class="label">${c.cadena}</div>
-      <div class="bar-track"><div class="bar-fill" style="width:${(c.cuota / maxShare * 100).toFixed(1)}%"></div></div>
+      ${sparkline(c.cadena, sparkDays)}
+      <div class="bar-track"><div class="bar-fill" style="width:${(c.cuota / maxShare * 100).toFixed(1)}%; background:${colorFor(c.cadena)}"></div></div>
       <div class="value">${c.cuota.toFixed(1)}%</div>
     </div>
   `).join('');
@@ -187,11 +250,10 @@ function drawChart() {
 
   const days = currentRangeDays > 0 ? ALL_DAYS.slice(-currentRangeDays) : ALL_DAYS;
   const labels = days.map(d => d.fecha.slice(5));
-  const palette = ['#2FD3B0', '#F2A93B', '#7F77DD', '#D4537E', '#378ADD'];
-  const datasets = topNames.map((name, i) => ({
+  const datasets = topNames.map(name => ({
     label: name,
     data: days.map(d => (d.canales.find(c => c.cadena === name) || {}).cuota ?? null),
-    borderColor: palette[i % palette.length],
+    borderColor: colorFor(name),
     backgroundColor: 'transparent',
     tension: 0.25,
     spanGaps: true,
