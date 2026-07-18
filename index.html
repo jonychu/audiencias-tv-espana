@@ -15,7 +15,6 @@
     --text: #E7E9EE;
     --text-muted: #8891A3;
     --accent: #2FD3B0;
-    --accent-dim: #1B7A66;
     --live: #E24B4A;
   }
   * { box-sizing: border-box; }
@@ -24,106 +23,154 @@
     background: var(--bg);
     color: var(--text);
     font-family: 'Inter', sans-serif;
-    padding: 32px 20px 64px;
+    padding: 28px 20px 64px;
   }
-  .wrap { max-width: 920px; margin: 0 auto; }
+  .wrap { max-width: 1180px; margin: 0 auto; }
 
-  header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
-  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 26px; margin: 0; display: flex; align-items: center; gap: 10px; }
+  header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+  .titleblock h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 26px; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
+  .titleblock p { margin: 0; font-size: 13px; color: var(--text-muted); }
   .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--live); display: inline-block; }
-  @media (prefers-reduced-motion: no-preference) {
-    .dot { animation: pulse 2s ease-in-out infinite; }
-  }
+  @media (prefers-reduced-motion: no-preference) { .dot { animation: pulse 2s ease-in-out infinite; } }
   @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-  .updated { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-muted); }
 
-  section { margin-bottom: 40px; }
-  h2 { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 14px; }
+  .stat-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+  .badge { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px; min-width: 130px; }
+  .badge .label { font-size: 11px; color: var(--text-muted); margin-bottom: 4px; }
+  .badge .value { font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; }
 
-  .top5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+  .layout { display: grid; grid-template-columns: 1fr 320px; gap: 20px; align-items: start; }
+  @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
+
+  section { margin-bottom: 28px; }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 14px; }
+
+  .top5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
   .card .rank { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-muted); }
-  .card .name { font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; margin: 6px 0 8px; }
-  .card .share { font-family: 'IBM Plex Mono', monospace; font-size: 24px; color: var(--accent); }
+  .card .name { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; margin: 6px 0 8px; }
+  .card .share { font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: var(--accent); }
+  .card .bar-track { margin-top: 10px; background: var(--surface-2); border-radius: 4px; height: 5px; overflow: hidden; }
+  .card .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
 
-  .bar-row { display: grid; grid-template-columns: 110px 1fr 56px; align-items: center; gap: 12px; padding: 7px 0; }
-  .bar-row .label { font-size: 13px; color: var(--text); }
-  .bar-track { background: var(--surface-2); border-radius: 4px; height: 8px; overflow: hidden; }
+  .sidebar-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  .bar-row { display: grid; grid-template-columns: 96px 1fr 48px; align-items: center; gap: 10px; padding: 6px 0; }
+  .bar-row .label { font-size: 13px; }
+  .bar-track { background: var(--surface-2); border-radius: 4px; height: 7px; overflow: hidden; }
   .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
   .bar-row .value { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-muted); text-align: right; }
 
+  .info-card { margin-top: 16px; font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+  .info-card a { color: var(--accent); }
+
   .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .chart-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+  .range-btns { display: flex; gap: 6px; }
+  .range-btns button {
+    background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border);
+    border-radius: 6px; padding: 5px 12px; font-size: 12px; font-family: 'IBM Plex Mono', monospace; cursor: pointer;
+  }
+  .range-btns button.active { background: var(--accent); color: #04342C; border-color: var(--accent); }
 
   .empty { background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 28px; text-align: center; color: var(--text-muted); font-size: 14px; }
 
   footer { color: var(--text-muted); font-size: 12px; line-height: 1.6; border-top: 1px solid var(--border); padding-top: 16px; }
-  footer a { color: var(--accent); }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1><span class="dot" aria-hidden="true"></span> Audiencias TV España</h1>
-    <span class="updated" id="updated">cargando…</span>
+    <div class="titleblock">
+      <h1><span class="dot" aria-hidden="true"></span> Audiencias TV España</h1>
+      <p id="subtitle">cargando…</p>
+    </div>
+    <div class="stat-badges">
+      <div class="badge"><div class="label">Días registrados</div><div class="value" id="badge-days">–</div></div>
+      <div class="badge"><div class="label">Actualización</div><div class="value">diaria, ~11:30h</div></div>
+      <div class="badge"><div class="label">Última jornada</div><div class="value" id="badge-last">–</div></div>
+    </div>
   </header>
 
-  <section>
-    <h2>Top 5 canales (último día)</h2>
-    <div class="top5" id="top5"></div>
-  </section>
+  <div class="layout">
+    <div>
+      <section>
+        <h2>Top 5 canales (último día)</h2>
+        <div class="top5" id="top5"></div>
+      </section>
 
-  <section>
-    <h2>Cuota de pantalla, todas las cadenas</h2>
-    <div id="bars"></div>
-  </section>
-
-  <section>
-    <h2>Evolución, últimos días</h2>
-    <div class="chart-card">
-      <canvas id="evolChart" height="220"></canvas>
+      <section>
+        <div class="chart-card">
+          <div class="chart-head">
+            <h2 style="margin:0">Evolución</h2>
+            <div class="range-btns" id="rangeBtns">
+              <button data-days="7">7D</button>
+              <button data-days="30">30D</button>
+              <button data-days="90">90D</button>
+              <button data-days="0">Todo</button>
+            </div>
+          </div>
+          <canvas id="evolChart" height="220"></canvas>
+        </div>
+      </section>
     </div>
-  </section>
+
+    <div>
+      <section class="sidebar-card">
+        <h2>Cuota de pantalla</h2>
+        <div id="bars"></div>
+        <div class="info-card">
+          Datos agregados a partir de las publicaciones diarias de audiencias de FormulaTV.
+          No es medición en directo: refleja la jornada anterior, actualizada cada mañana.
+        </div>
+      </section>
+    </div>
+  </div>
 
   <footer>
-    Datos agregados a partir de las publicaciones diarias de audiencias de FormulaTV.
-    No es medición en directo: refleja la jornada anterior, actualizada cada mañana.
+    Fuente: publicaciones diarias de FormulaTV. Proyecto personal sin afiliación con la medición oficial (Kantar/Fifty5Blue).
   </footer>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script>
+let ALL_DAYS = [];
+let currentRangeDays = 30;
+let chartInstance = null;
+
 async function loadData() {
   try {
     const res = await fetch('./data/history.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('no data yet');
     const days = await res.json();
     if (!days.length) throw new Error('empty');
-    render(days);
+    ALL_DAYS = days;
+    render();
   } catch (e) {
     document.getElementById('top5').innerHTML =
       '<div class="empty">Aún no hay datos. El primer scrape se ejecuta en la próxima pasada programada, o lánzalo a mano desde la pestaña "Actions" de GitHub.</div>';
-    document.getElementById('updated').textContent = '';
+    document.getElementById('subtitle').textContent = '';
   }
 }
 
-function render(days) {
-  const last = days[days.length - 1];
-  document.getElementById('updated').textContent = 'actualizado: ' + last.fecha;
+function render() {
+  const last = ALL_DAYS[ALL_DAYS.length - 1];
+  document.getElementById('subtitle').textContent = 'Publicaciones diarias de audiencia, España';
+  document.getElementById('badge-days').textContent = ALL_DAYS.length;
+  document.getElementById('badge-last').textContent = last.fecha;
 
   const sorted = [...last.canales].sort((a, b) => b.cuota - a.cuota);
+  const maxShare = sorted[0]?.cuota || 1;
 
-  const top5 = document.getElementById('top5');
-  top5.innerHTML = sorted.slice(0, 5).map((c, i) => `
+  document.getElementById('top5').innerHTML = sorted.slice(0, 5).map((c, i) => `
     <div class="card">
       <div class="rank">#${i + 1}</div>
       <div class="name">${c.cadena}</div>
       <div class="share">${c.cuota.toFixed(1)}%</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(c.cuota / maxShare * 100).toFixed(1)}%"></div></div>
     </div>
   `).join('');
 
-  const maxShare = sorted[0]?.cuota || 1;
-  const bars = document.getElementById('bars');
-  bars.innerHTML = sorted.map(c => `
+  document.getElementById('bars').innerHTML = sorted.map(c => `
     <div class="bar-row">
       <div class="label">${c.cadena}</div>
       <div class="bar-track"><div class="bar-fill" style="width:${(c.cuota / maxShare * 100).toFixed(1)}%"></div></div>
@@ -131,7 +178,14 @@ function render(days) {
     </div>
   `).join('');
 
-  const topNames = sorted.slice(0, 5).map(c => c.cadena);
+  drawChart();
+}
+
+function drawChart() {
+  const topNames = [...ALL_DAYS[ALL_DAYS.length - 1].canales]
+    .sort((a, b) => b.cuota - a.cuota).slice(0, 5).map(c => c.cadena);
+
+  const days = currentRangeDays > 0 ? ALL_DAYS.slice(-currentRangeDays) : ALL_DAYS;
   const labels = days.map(d => d.fecha.slice(5));
   const palette = ['#2FD3B0', '#F2A93B', '#7F77DD', '#D4537E', '#378ADD'];
   const datasets = topNames.map((name, i) => ({
@@ -141,21 +195,33 @@ function render(days) {
     backgroundColor: 'transparent',
     tension: 0.25,
     spanGaps: true,
+    pointRadius: days.length > 45 ? 0 : 3,
   }));
 
-  new Chart(document.getElementById('evolChart'), {
+  if (chartInstance) chartInstance.destroy();
+  chartInstance = new Chart(document.getElementById('evolChart'), {
     type: 'line',
     data: { labels, datasets },
     options: {
       responsive: true,
       plugins: { legend: { labels: { color: '#E7E9EE', font: { family: 'Inter' } } } },
       scales: {
-        x: { ticks: { color: '#8891A3' }, grid: { color: '#2A3040' } },
+        x: { ticks: { color: '#8891A3', maxTicksLimit: 12 }, grid: { color: '#2A3040' } },
         y: { ticks: { color: '#8891A3', callback: v => v + '%' }, grid: { color: '#2A3040' } },
       },
     },
   });
 }
+
+document.getElementById('rangeBtns').addEventListener('click', (e) => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  currentRangeDays = parseInt(btn.dataset.days, 10);
+  document.querySelectorAll('#rangeBtns button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  drawChart();
+});
+document.querySelector('#rangeBtns button[data-days="30"]').classList.add('active');
 
 loadData();
 </script>
