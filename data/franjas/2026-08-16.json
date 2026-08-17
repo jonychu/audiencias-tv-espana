@@ -1,0 +1,77 @@
+{
+  "fecha": "2026-08-16",
+  "franjas": [
+    {
+      "franja": "Madrugada",
+      "cuotas": {
+        "La 1": 5.9,
+        "La 2": 2.7,
+        "Antena 3": 8.2,
+        "Telecinco": 1.1,
+        "Cuatro": 1.8,
+        "laSexta": 1.6,
+        "Temáticas de pago": 18.5
+      }
+    },
+    {
+      "franja": "Mañana",
+      "cuotas": {
+        "La 1": 13.0,
+        "La 2": 3.0,
+        "Antena 3": 6.0,
+        "Telecinco": 6.3,
+        "Cuatro": 6.9,
+        "laSexta": 6.9,
+        "Temáticas de pago": 12.4
+      }
+    },
+    {
+      "franja": "Sobremesa",
+      "cuotas": {
+        "La 1": 11.0,
+        "La 2": 2.4,
+        "Antena 3": 17.1,
+        "Telecinco": 6.9,
+        "Cuatro": 6.9,
+        "laSexta": 5.8,
+        "Temáticas de pago": 11.4
+      }
+    },
+    {
+      "franja": "Tarde",
+      "cuotas": {
+        "La 1": 6.7,
+        "La 2": 2.7,
+        "Antena 3": 12.1,
+        "Telecinco": 7.7,
+        "Cuatro": 5.5,
+        "laSexta": 6.2,
+        "Temáticas de pago": 15.1
+      }
+    },
+    {
+      "franja": "Prime Time",
+      "cuotas": {
+        "La 1": 10.9,
+        "La 2": 3.4,
+        "Antena 3": 10.7,
+        "Telecinco": 8.0,
+        "Cuatro": 4.2,
+        "laSexta": 4.7,
+        "Temáticas de pago": 14.5
+      }
+    },
+    {
+      "franja": "Late Night",
+      "cuotas": {
+        "La 1": 7.9,
+        "La 2": 2.3,
+        "Antena 3": 7.8,
+        "Telecinco": 6.4,
+        "Cuatro": 5.0,
+        "laSexta": 4.9,
+        "Temáticas de pago": 15.7
+      }
+    }
+  ]
+}
