@@ -336,7 +336,21 @@ function drawChart() {
     data: { labels, datasets },
     options: {
       responsive: true,
-      plugins: { legend: { labels: { color: '#1A1F29', font: { family: 'Inter' } } } },
+      plugins: {
+        legend: { labels: { color: '#1A1F29', font: { family: 'Inter' } } },
+        tooltip: {
+          callbacks: {
+            afterLabel: (context) => {
+              const fecha = days[context.dataIndex]?.fecha;
+              const channelName = context.dataset.label;
+              const dayProgramas = PROGRAMAS_DAYS.find(d => d.fecha === fecha);
+              if (!dayProgramas) return '';
+              const top = dayProgramas.programas.find(p => p.cadena === channelName);
+              return top ? `Top del día: ${top.programa} (${top.share.toFixed(1)}%)` : '';
+            },
+          },
+        },
+      },
       scales: {
         x: { ticks: { color: '#6B7280', maxTicksLimit: 12 }, grid: { color: '#E2E5EA' } },
         y: { ticks: { color: '#6B7280', callback: v => v + '%' }, grid: { color: '#E2E5EA' } },
@@ -477,4 +491,3 @@ function renderProgramas(dayProgramas) {
 </script>
 </body>
 </html>
- 
