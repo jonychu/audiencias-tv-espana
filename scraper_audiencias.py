@@ -130,7 +130,7 @@ def save_franjas(day: date, franjas: list[dict]) -> None:
 PROGRAMAS_URL = "https://www.eldiario.es/vertele/lo-mas-visto-tv/{yyyy}/{mm}/{dd}/"
 
 ROW_RE = re.compile(
-    r'<th class="">(.*?)</th>\s*'
+    r'<th class="">([^<]*)</th>\s*'
     r'<td class="channel"><img[^>]*alt="([^"]*)"[^>]*></td>\s*'
     r'<td class="total">([\d.]*)</td>\s*'
     r'<td class="share">([\d.,]+)%</td>\s*'
