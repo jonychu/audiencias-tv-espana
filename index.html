@@ -159,6 +159,13 @@
 
   <section>
     <div class="chart-card">
+      <h2>Medias mensuales</h2>
+      <div id="monthlyTable" style="overflow-x:auto"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="chart-card">
       <h2>Audiencias por franjas horarias</h2>
       <div id="franjasTable" style="overflow-x:auto"></div>
     </div>
@@ -320,15 +327,29 @@ function drawChart() {
 
   const days = currentRangeDays > 0 ? ALL_DAYS.slice(-currentRangeDays) : ALL_DAYS;
   const labels = days.map(d => d.fecha.slice(5));
-  const datasets = topNames.map(name => ({
-    label: name,
-    data: days.map(d => (d.canales.find(c => c.cadena === name) || {}).cuota ?? null),
-    borderColor: colorFor(name),
-    backgroundColor: 'transparent',
-    tension: 0.25,
-    spanGaps: true,
-    pointRadius: days.length > 45 ? 0 : 3,
-  }));
+  const ctx = document.getElementById('evolChart').getContext('2d');
+
+  const datasets = topNames.map((name, i) => {
+    const color = colorFor(name);
+    const gradient = ctx.createLinearGradient(0, 0, 0, 320);
+    gradient.addColorStop(0, color + '26');
+    gradient.addColorStop(1, color + '00');
+    return {
+      label: name,
+      data: days.map(d => (d.canales.find(c => c.cadena === name) || {}).cuota ?? null),
+      borderColor: color,
+      backgroundColor: i < 2 ? gradient : 'transparent',
+      fill: i < 2,
+      borderWidth: 2.25,
+      tension: 0.35,
+      spanGaps: true,
+      pointRadius: days.length > 45 ? 0 : 2.5,
+      pointHoverRadius: 5,
+      pointBackgroundColor: '#FFFFFF',
+      pointBorderWidth: 2,
+      pointBorderColor: color,
+    };
+  });
 
   if (chartInstance) chartInstance.destroy();
   chartInstance = new Chart(document.getElementById('evolChart'), {
@@ -336,9 +357,19 @@ function drawChart() {
     data: { labels, datasets },
     options: {
       responsive: true,
+      interaction: { mode: 'nearest', intersect: false },
       plugins: {
-        legend: { labels: { color: '#1A1F29', font: { family: 'Inter' } } },
+        legend: {
+          labels: { color: '#1A1F29', font: { family: 'Inter', size: 12 }, usePointStyle: true, pointStyle: 'circle', boxWidth: 7, padding: 16 },
+        },
         tooltip: {
+          backgroundColor: '#1A1F29',
+          titleFont: { family: 'Space Grotesk', size: 12, weight: '600' },
+          bodyFont: { family: 'IBM Plex Mono', size: 12 },
+          padding: 12,
+          cornerRadius: 8,
+          displayColors: true,
+          boxPadding: 4,
           callbacks: {
             afterLabel: (context) => {
               const fecha = days[context.dataIndex]?.fecha;
@@ -352,8 +383,8 @@ function drawChart() {
         },
       },
       scales: {
-        x: { ticks: { color: '#6B7280', maxTicksLimit: 12 }, grid: { color: '#E2E5EA' } },
-        y: { ticks: { color: '#6B7280', callback: v => v + '%' }, grid: { color: '#E2E5EA' } },
+        x: { ticks: { color: '#6B7280', maxTicksLimit: 10, font: { size: 11 } }, grid: { display: false }, border: { color: '#E2E5EA' } },
+        y: { ticks: { color: '#6B7280', callback: v => v + '%', font: { size: 11 } }, grid: { color: '#EEF0F3' }, border: { display: false } },
       },
     },
   });
@@ -414,10 +445,63 @@ let FRANJAS_DAYS = [];
 let PROGRAMAS_DAYS = [];
 
 loadData().then(async () => {
+  renderMonthly();
   FRANJAS_DAYS = await loadFranjasData();
   PROGRAMAS_DAYS = await loadProgramasData();
   setupDaySelect();
 });
+
+function renderMonthly() {
+  const byMonthChannel = {};
+  const months = [];
+  ALL_DAYS.forEach(d => {
+    const month = d.fecha.slice(0, 7);
+    if (!months.includes(month)) months.push(month);
+    d.canales.forEach(c => {
+      byMonthChannel[c.cadena] ??= {};
+      byMonthChannel[c.cadena][month] ??= [];
+      byMonthChannel[c.cadena][month].push(c.cuota);
+    });
+  });
+  months.sort();
+
+  const lastDay = ALL_DAYS[ALL_DAYS.length - 1];
+  const channelOrder = [...lastDay.canales].sort((a, b) => b.cuota - a.cuota).map(c => c.cadena)
+    .filter(name => byMonthChannel[name]);
+
+  const avg = (name, month) => {
+    const vals = byMonthChannel[name]?.[month];
+    return vals && vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+  };
+
+  const colMax = {};
+  months.forEach(month => {
+    const vals = channelOrder.map(name => avg(name, month)).filter(v => v != null);
+    colMax[month] = vals.length ? Math.max(...vals) : null;
+  });
+
+  const monthLabel = (m) => {
+    const [y, mo] = m.split('-');
+    const names = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+    return `${names[parseInt(mo, 10) - 1]} ${y.slice(2)}`;
+  };
+
+  let html = '<table class="ftable"><thead><tr><th>Cadena</th>' +
+    months.map(m => `<th>${monthLabel(m)}</th>`).join('') + '</tr></thead><tbody>';
+
+  channelOrder.slice(0, 10).forEach(name => {
+    html += `<tr><td class="chname">${pill(name)} ${name}</td>`;
+    months.forEach(month => {
+      const val = avg(name, month);
+      const cls = (val != null && colMax[month] != null && Math.abs(val - colMax[month]) < 0.001) ? 'peak' : '';
+      html += `<td class="${cls}">${val != null ? val.toFixed(1) + '%' : '–'}</td>`;
+    });
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+  document.getElementById('monthlyTable').innerHTML = html;
+}
 
 async function loadFranjasData() {
   try {
