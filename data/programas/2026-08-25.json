@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-25",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1556000,
+      "share": 21.6,
+      "rating": 3.3
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1368000,
+      "share": 19.7,
+      "rating": 2.9
+    },
+    {
+      "programa": "La vuelta: Andorra la Vella-Andorra la Vella",
+      "cadena": "La 1",
+      "espectadores": 1141000,
+      "share": 13.8,
+      "rating": 2.4
+    },
+    {
+      "programa": "La vuelta: Programa: Andorra la Vella-Andorra la Vella",
+      "cadena": "La 1",
+      "espectadores": 1122000,
+      "share": 13.7,
+      "rating": 2.4
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1107000,
+      "share": 13.1,
+      "rating": 2.3
+    },
+    {
+      "programa": "Viaje al centro de la tele",
+      "cadena": "La 1",
+      "espectadores": 966000,
+      "share": 10.2,
+      "rating": 2.0
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 910000,
+      "share": 9.7,
+      "rating": 1.9
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 904000,
+      "share": 11.7,
+      "rating": 1.9
+    },
+    {
+      "programa": "En tierra lejana",
+      "cadena": "Antena 3",
+      "espectadores": 887000,
+      "share": 14.0,
+      "rating": 1.9
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 879000,
+      "share": 13.6,
+      "rating": 1.8
+    }
+  ]
+}

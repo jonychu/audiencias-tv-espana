@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-06",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1411000,
+      "share": 20.5,
+      "rating": 3.0
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1247000,
+      "share": 18.2,
+      "rating": 2.6
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1043000,
+      "share": 12.7,
+      "rating": 2.2
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 968000,
+      "share": 12.1,
+      "rating": 2.0
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 895000,
+      "share": 13.5,
+      "rating": 1.9
+    },
+    {
+      "programa": "Viaje al centro de la tele",
+      "cadena": "La 1",
+      "espectadores": 885000,
+      "share": 10.3,
+      "rating": 1.9
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 865000,
+      "share": 12.0,
+      "rating": 1.8
+    },
+    {
+      "programa": "Valle Salvaje",
+      "cadena": "La 1",
+      "espectadores": 835000,
+      "share": 11.8,
+      "rating": 1.8
+    },
+    {
+      "programa": "Cocina abierta de Karlos Arguiñano",
+      "cadena": "Antena 3",
+      "espectadores": 821000,
+      "share": 16.7,
+      "rating": 1.7
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 817000,
+      "share": 9.7,
+      "rating": 1.7
+    }
+  ]
+}

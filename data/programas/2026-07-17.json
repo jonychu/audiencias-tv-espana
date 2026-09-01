@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-17",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Tu cara me suena",
+      "cadena": "Antena 3",
+      "espectadores": 1417000,
+      "share": 21.8,
+      "rating": 3.0
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1415000,
+      "share": 20.7,
+      "rating": 3.0
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1159000,
+      "share": 17.4,
+      "rating": 2.4
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1124000,
+      "share": 13.1,
+      "rating": 2.4
+    },
+    {
+      "programa": "Tu cara me suena: Calentando motores",
+      "cadena": "Antena 3",
+      "espectadores": 1123000,
+      "share": 13.0,
+      "rating": 2.4
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 887000,
+      "share": 10.6,
+      "rating": 1.9
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 853000,
+      "share": 12.6,
+      "rating": 1.8
+    },
+    {
+      "programa": "Tour de francia: Dole-Belfort",
+      "cadena": "La 2",
+      "espectadores": 768000,
+      "share": 9.2,
+      "rating": 1.6
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 759000,
+      "share": 11.3,
+      "rating": 1.6
+    },
+    {
+      "programa": "Ny: La finalisima",
+      "cadena": "La 1",
+      "espectadores": 755000,
+      "share": 8.7,
+      "rating": 1.6
+    }
+  ]
+}

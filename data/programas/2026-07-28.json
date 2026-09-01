@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-28",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1523000,
+      "share": 20.8,
+      "rating": 3.2
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1345000,
+      "share": 18.3,
+      "rating": 2.8
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1223000,
+      "share": 14.3,
+      "rating": 2.6
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 1018000,
+      "share": 12.3,
+      "rating": 2.1
+    },
+    {
+      "programa": "Viaje al centro de la tele",
+      "cadena": "La 1",
+      "espectadores": 975000,
+      "share": 10.4,
+      "rating": 2.0
+    },
+    {
+      "programa": "First dates: Summer",
+      "cadena": "Telecinco icono",
+      "espectadores": 932000,
+      "share": 9.9,
+      "rating": 2.0
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 928000,
+      "share": 11.8,
+      "rating": 2.0
+    },
+    {
+      "programa": "El Hormiguero",
+      "cadena": "Antena 3",
+      "espectadores": 914000,
+      "share": 9.6,
+      "rating": 1.9
+    },
+    {
+      "programa": "Dog house",
+      "cadena": "La 1",
+      "espectadores": 888000,
+      "share": 12.7,
+      "rating": 1.9
+    },
+    {
+      "programa": "Viaje al centro de la tele",
+      "cadena": "La 1",
+      "espectadores": 886000,
+      "share": 9.2,
+      "rating": 1.9
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-22",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Multicine: Doble traicion ( 2000 )",
+      "cadena": "Antena 3",
+      "espectadores": 1150000,
+      "share": 15.2,
+      "rating": 2.4
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1142000,
+      "share": 18.3,
+      "rating": 2.4
+    },
+    {
+      "programa": "Sesión de tarde: El verano de sus vidas",
+      "cadena": "La 1",
+      "espectadores": 886000,
+      "share": 11.7,
+      "rating": 1.9
+    },
+    {
+      "programa": "Futbol: Liga española: Espanyol-R.Madrid",
+      "cadena": "Otros (deporte u otros)",
+      "espectadores": 876000,
+      "share": 10.8,
+      "rating": 1.8
+    },
+    {
+      "programa": "Multicine 2: Presunto secuestro",
+      "cadena": "Antena 3",
+      "espectadores": 840000,
+      "share": 12.1,
+      "rating": 1.8
+    },
+    {
+      "programa": "Atrapa un millón",
+      "cadena": "Antena 3",
+      "espectadores": 654000,
+      "share": 8.3,
+      "rating": 1.4
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 646000,
+      "share": 8.2,
+      "rating": 1.4
+    },
+    {
+      "programa": "Cocina abierta de Karlos Arguiñano",
+      "cadena": "Antena 3",
+      "espectadores": 618000,
+      "share": 13.4,
+      "rating": 1.3
+    },
+    {
+      "programa": "La Noche D",
+      "cadena": "La 1",
+      "espectadores": 607000,
+      "share": 7.5,
+      "rating": 1.3
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 597000,
+      "share": 9.1,
+      "rating": 1.3
+    }
+  ]
+}

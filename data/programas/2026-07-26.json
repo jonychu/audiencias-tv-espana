@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-26",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Película de la semana: Mision hostil",
+      "cadena": "La 1",
+      "espectadores": 1218000,
+      "share": 13.7,
+      "rating": 2.6
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1077000,
+      "share": 15.9,
+      "rating": 2.3
+    },
+    {
+      "programa": "Multicine: Deudas de familia",
+      "cadena": "Antena 3",
+      "espectadores": 915000,
+      "share": 11.4,
+      "rating": 1.9
+    },
+    {
+      "programa": "Sesión de tarde: Dicen por ahi...",
+      "cadena": "La 1",
+      "espectadores": 897000,
+      "share": 11.1,
+      "rating": 1.9
+    },
+    {
+      "programa": "Sesión de tarde 2: Y que le gusten los perros",
+      "cadena": "La 1",
+      "espectadores": 828000,
+      "share": 10.5,
+      "rating": 1.7
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 796000,
+      "share": 10.7,
+      "rating": 1.7
+    },
+    {
+      "programa": "Una nueva vida",
+      "cadena": "Antena 3",
+      "espectadores": 745000,
+      "share": 9.6,
+      "rating": 1.6
+    },
+    {
+      "programa": "Multicine 2: Recuerdos que matan",
+      "cadena": "Antena 3",
+      "espectadores": 733000,
+      "share": 9.4,
+      "rating": 1.5
+    },
+    {
+      "programa": "Sesión de tarde 3: Un verano en creta",
+      "cadena": "La 1",
+      "espectadores": 732000,
+      "share": 9.9,
+      "rating": 1.5
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 724000,
+      "share": 9.6,
+      "rating": 1.5
+    }
+  ]
+}

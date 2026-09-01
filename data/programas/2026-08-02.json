@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-02",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1161000,
+      "share": 17.3,
+      "rating": 2.4
+    },
+    {
+      "programa": "Multicine: El caso amish",
+      "cadena": "Antena 3",
+      "espectadores": 1062000,
+      "share": 13.2,
+      "rating": 2.2
+    },
+    {
+      "programa": "Multicine 2: Por ti he matado",
+      "cadena": "Antena 3",
+      "espectadores": 796000,
+      "share": 10.4,
+      "rating": 1.7
+    },
+    {
+      "programa": "Grand prix: Presenta",
+      "cadena": "La 1",
+      "espectadores": 785000,
+      "share": 8.7,
+      "rating": 1.7
+    },
+    {
+      "programa": "Grand Prix",
+      "cadena": "La 1",
+      "espectadores": 776000,
+      "share": 11.1,
+      "rating": 1.6
+    },
+    {
+      "programa": "First dates: Summer",
+      "cadena": "Telecinco icono",
+      "espectadores": 769000,
+      "share": 8.6,
+      "rating": 1.6
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 765000,
+      "share": 10.4,
+      "rating": 1.6
+    },
+    {
+      "programa": "Una nueva vida",
+      "cadena": "Antena 3",
+      "espectadores": 732000,
+      "share": 9.6,
+      "rating": 1.5
+    },
+    {
+      "programa": "Sesión de tarde: La trampa del amor(2024)",
+      "cadena": "La 1",
+      "espectadores": 725000,
+      "share": 9.1,
+      "rating": 1.5
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 651000,
+      "share": 8.9,
+      "rating": 1.4
+    }
+  ]
+}

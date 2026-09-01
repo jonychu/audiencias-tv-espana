@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-20",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Imparables: Un equipo de leyenda",
+      "cadena": "La 1",
+      "espectadores": 4152000,
+      "share": 36.0,
+      "rating": 8.7
+    },
+    {
+      "programa": "Enhorabuena, campeones",
+      "cadena": "La 1",
+      "espectadores": 2681000,
+      "share": 30.4,
+      "rating": 5.6
+    },
+    {
+      "programa": "La segunda estrella es nuestra",
+      "cadena": "La 1",
+      "espectadores": 2253000,
+      "share": 27.2,
+      "rating": 4.7
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 1697000,
+      "share": 18.8,
+      "rating": 3.6
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1338000,
+      "share": 17.0,
+      "rating": 2.8
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1216000,
+      "share": 13.0,
+      "rating": 2.6
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1177000,
+      "share": 12.9,
+      "rating": 2.5
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 1171000,
+      "share": 26.1,
+      "rating": 2.5
+    },
+    {
+      "programa": "Yas verano",
+      "cadena": "Antena 3",
+      "espectadores": 773000,
+      "share": 9.3,
+      "rating": 1.6
+    },
+    {
+      "programa": "Horizonte",
+      "cadena": "Cuatro",
+      "espectadores": 744000,
+      "share": 6.2,
+      "rating": 1.6
+    }
+  ]
+}

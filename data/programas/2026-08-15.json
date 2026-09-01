@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-15",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Multicine: Wonder ( 2017 )",
+      "cadena": "Antena 3",
+      "espectadores": 1105000,
+      "share": 14.6,
+      "rating": 2.3
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1089000,
+      "share": 17.7,
+      "rating": 2.3
+    },
+    {
+      "programa": "Superestrellas: Sandra bullock: Amor con preaviso",
+      "cadena": "La 1",
+      "espectadores": 1005000,
+      "share": 13.3,
+      "rating": 2.1
+    },
+    {
+      "programa": "Cine 5 estrellas: Mañana es hoy",
+      "cadena": "Telecinco icono",
+      "espectadores": 861000,
+      "share": 11.3,
+      "rating": 1.8
+    },
+    {
+      "programa": "Multicine 2: Unidas por un sueño",
+      "cadena": "Antena 3",
+      "espectadores": 735000,
+      "share": 10.3,
+      "rating": 1.5
+    },
+    {
+      "programa": "Atrapa un millón",
+      "cadena": "Antena 3",
+      "espectadores": 734000,
+      "share": 9.5,
+      "rating": 1.5
+    },
+    {
+      "programa": "Superestrellas: Sandra bullock 2: Loca obsesion",
+      "cadena": "La 1",
+      "espectadores": 708000,
+      "share": 9.7,
+      "rating": 1.5
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 681000,
+      "share": 9.8,
+      "rating": 1.4
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 615000,
+      "share": 7.8,
+      "rating": 1.3
+    },
+    {
+      "programa": "Cocina abierta de Karlos Arguiñano",
+      "cadena": "Antena 3",
+      "espectadores": 608000,
+      "share": 13.4,
+      "rating": 1.3
+    }
+  ]
+}

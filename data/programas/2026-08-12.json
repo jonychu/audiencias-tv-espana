@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-12",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 2131000,
+      "share": 27.3,
+      "rating": 4.5
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1547000,
+      "share": 21.8,
+      "rating": 3.3
+    },
+    {
+      "programa": "Futbol: Trofeo teresa herrera: Deportivo Coruña-R.Madrid",
+      "cadena": "La 1",
+      "espectadores": 1289000,
+      "share": 15.1,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1126000,
+      "share": 13.6,
+      "rating": 2.4
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 1018000,
+      "share": 13.0,
+      "rating": 2.1
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 886000,
+      "share": 11.5,
+      "rating": 1.9
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 855000,
+      "share": 11.4,
+      "rating": 1.8
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 815000,
+      "share": 9.6,
+      "rating": 1.7
+    },
+    {
+      "programa": "Cocina abierta de Karlos Arguiñano",
+      "cadena": "Antena 3",
+      "espectadores": 768000,
+      "share": 15.7,
+      "rating": 1.6
+    },
+    {
+      "programa": "El Hormiguero",
+      "cadena": "Antena 3",
+      "espectadores": 676000,
+      "share": 8.1,
+      "rating": 1.4
+    }
+  ]
+}

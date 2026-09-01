@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-03",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1507000,
+      "share": 21.6,
+      "rating": 3.2
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1229000,
+      "share": 17.8,
+      "rating": 2.6
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1162000,
+      "share": 14.0,
+      "rating": 2.4
+    },
+    {
+      "programa": "Grand Prix",
+      "cadena": "La 1",
+      "espectadores": 958000,
+      "share": 12.3,
+      "rating": 2.0
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 941000,
+      "share": 11.8,
+      "rating": 2.0
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 897000,
+      "share": 9.7,
+      "rating": 1.9
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 863000,
+      "share": 11.6,
+      "rating": 1.8
+    },
+    {
+      "programa": "El Hormiguero",
+      "cadena": "Antena 3",
+      "espectadores": 851000,
+      "share": 9.2,
+      "rating": 1.8
+    },
+    {
+      "programa": "Grand prix: Presenta",
+      "cadena": "La 1",
+      "espectadores": 821000,
+      "share": 8.9,
+      "rating": 1.7
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 806000,
+      "share": 11.9,
+      "rating": 1.7
+    }
+  ]
+}

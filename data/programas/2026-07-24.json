@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-24",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1319000,
+      "share": 19.2,
+      "rating": 2.8
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1143000,
+      "share": 16.6,
+      "rating": 2.4
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1105000,
+      "share": 12.5,
+      "rating": 2.3
+    },
+    {
+      "programa": "Tour de francia: Gap-Alpe D'huez",
+      "cadena": "La 2",
+      "espectadores": 1082000,
+      "share": 12.6,
+      "rating": 2.3
+    },
+    {
+      "programa": "La voz kids: Semifinal",
+      "cadena": "Antena 3",
+      "espectadores": 1030000,
+      "share": 14.9,
+      "rating": 2.2
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 917000,
+      "share": 10.6,
+      "rating": 1.9
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 908000,
+      "share": 12.4,
+      "rating": 1.9
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 808000,
+      "share": 11.6,
+      "rating": 1.7
+    },
+    {
+      "programa": "Allá tú",
+      "cadena": "Telecinco icono",
+      "espectadores": 779000,
+      "share": 11.4,
+      "rating": 1.6
+    },
+    {
+      "programa": "Malas lenguas",
+      "cadena": "La 1",
+      "espectadores": 764000,
+      "share": 11.4,
+      "rating": 1.6
+    }
+  ]
+}

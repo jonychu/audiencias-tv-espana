@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-27",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1492000,
+      "share": 21.0,
+      "rating": 3.1
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1257000,
+      "share": 16.8,
+      "rating": 2.6
+    },
+    {
+      "programa": "Futbol: Liga española: Barcelona-Ath.bilbao",
+      "cadena": "Otros (deporte u otros)",
+      "espectadores": 1058000,
+      "share": 11.0,
+      "rating": 2.2
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1051000,
+      "share": 12.2,
+      "rating": 2.2
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 969000,
+      "share": 10.0,
+      "rating": 2.0
+    },
+    {
+      "programa": "La vuelta: Programa: Alcossebre-Castello",
+      "cadena": "La 2",
+      "espectadores": 952000,
+      "share": 11.5,
+      "rating": 2.0
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 936000,
+      "share": 12.4,
+      "rating": 2.0
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 876000,
+      "share": 11.5,
+      "rating": 1.8
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 864000,
+      "share": 12.8,
+      "rating": 1.8
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 808000,
+      "share": 9.8,
+      "rating": 1.7
+    }
+  ]
+}

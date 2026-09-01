@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-23",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1156000,
+      "share": 16.9,
+      "rating": 2.4
+    },
+    {
+      "programa": "Multicine: Asesinada",
+      "cadena": "Antena 3",
+      "espectadores": 939000,
+      "share": 11.7,
+      "rating": 2.0
+    },
+    {
+      "programa": "Película de la semana: Despierta la furia",
+      "cadena": "La 1",
+      "espectadores": 914000,
+      "share": 10.3,
+      "rating": 1.9
+    },
+    {
+      "programa": "Multicine 2: Irresistible",
+      "cadena": "Antena 3",
+      "espectadores": 783000,
+      "share": 10.5,
+      "rating": 1.6
+    },
+    {
+      "programa": "Una nueva vida",
+      "cadena": "Antena 3",
+      "espectadores": 773000,
+      "share": 9.9,
+      "rating": 1.6
+    },
+    {
+      "programa": "Sesión de tarde 2: Adivina quien",
+      "cadena": "La 1",
+      "espectadores": 770000,
+      "share": 10.2,
+      "rating": 1.6
+    },
+    {
+      "programa": "Sesión de tarde: Un buen partido",
+      "cadena": "La 1",
+      "espectadores": 742000,
+      "share": 9.2,
+      "rating": 1.6
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 671000,
+      "share": 9.3,
+      "rating": 1.4
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 664000,
+      "share": 8.9,
+      "rating": 1.4
+    },
+    {
+      "programa": "D Corazón",
+      "cadena": "La 1",
+      "espectadores": 646000,
+      "share": 11.2,
+      "rating": 1.4
+    }
+  ]
+}

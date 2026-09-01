@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-18",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Francia-Inglaterra: 3 y 4",
+      "cadena": "La 1",
+      "espectadores": 2793000,
+      "share": 33.9,
+      "rating": 5.9
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 2597000,
+      "share": 31.6,
+      "rating": 5.5
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1261000,
+      "share": 18.4,
+      "rating": 2.7
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1156000,
+      "share": 13.5,
+      "rating": 2.4
+    },
+    {
+      "programa": "Tour de francia: Mulhouse-Le Markstein Fellering",
+      "cadena": "La 1",
+      "espectadores": 1144000,
+      "share": 13.6,
+      "rating": 2.4
+    },
+    {
+      "programa": "Multicine: Falsa evidencia",
+      "cadena": "Antena 3",
+      "espectadores": 1108000,
+      "share": 13.3,
+      "rating": 2.3
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 969000,
+      "share": 12.5,
+      "rating": 2.0
+    },
+    {
+      "programa": "Ny: La finalisima",
+      "cadena": "La 1",
+      "espectadores": 929000,
+      "share": 11.0,
+      "rating": 2.0
+    },
+    {
+      "programa": "Multicine 2: Mama te quiere",
+      "cadena": "Antena 3",
+      "espectadores": 859000,
+      "share": 11.9,
+      "rating": 1.8
+    },
+    {
+      "programa": "Estudio estadio: Mundial",
+      "cadena": "La 1",
+      "espectadores": 783000,
+      "share": 20.3,
+      "rating": 1.6
+    }
+  ]
+}

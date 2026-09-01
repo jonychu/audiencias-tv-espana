@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-30",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Película de la semana: Kraven the hunter",
+      "cadena": "La 1",
+      "espectadores": 1280000,
+      "share": 13.9,
+      "rating": 2.7
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1205000,
+      "share": 17.6,
+      "rating": 2.5
+    },
+    {
+      "programa": "La vuelta: La vila joiosa: Villajoyosa-Alto de Aitana.costa Blanca",
+      "cadena": "La 1",
+      "espectadores": 1180000,
+      "share": 13.5,
+      "rating": 2.5
+    },
+    {
+      "programa": "La vuelta: Programa: La vila joiosa: Villajoyosa-Alto de Aitana.costa Blanca",
+      "cadena": "La 1",
+      "espectadores": 1170000,
+      "share": 13.5,
+      "rating": 2.5
+    },
+    {
+      "programa": "Multicine: Diario de una niñera",
+      "cadena": "Antena 3",
+      "espectadores": 1064000,
+      "share": 12.3,
+      "rating": 2.2
+    },
+    {
+      "programa": "Una nueva vida",
+      "cadena": "Antena 3",
+      "espectadores": 796000,
+      "share": 10.1,
+      "rating": 1.7
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 711000,
+      "share": 9.3,
+      "rating": 1.5
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 697000,
+      "share": 8.2,
+      "rating": 1.5
+    },
+    {
+      "programa": "Multicine 2: Notas asesinas",
+      "cadena": "Antena 3",
+      "espectadores": 680000,
+      "share": 8.7,
+      "rating": 1.4
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 648000,
+      "share": 8.5,
+      "rating": 1.4
+    }
+  ]
+}

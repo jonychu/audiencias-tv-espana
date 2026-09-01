@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-25",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Tour de francia: Le Bourg D'oisans-Alpe D'huez",
+      "cadena": "La 1",
+      "espectadores": 1384000,
+      "share": 16.3,
+      "rating": 2.9
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1171000,
+      "share": 16.7,
+      "rating": 2.5
+    },
+    {
+      "programa": "La voz kids: Final",
+      "cadena": "Antena 3",
+      "espectadores": 1033000,
+      "share": 15.4,
+      "rating": 2.2
+    },
+    {
+      "programa": "Multicine: Una asesina en mi boda",
+      "cadena": "Antena 3",
+      "espectadores": 884000,
+      "share": 10.9,
+      "rating": 1.9
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 851000,
+      "share": 10.9,
+      "rating": 1.8
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 744000,
+      "share": 10.7,
+      "rating": 1.6
+    },
+    {
+      "programa": "Plan de c1ne: Larry crowne, nunca es tarde",
+      "cadena": "La 1",
+      "espectadores": 697000,
+      "share": 8.6,
+      "rating": 1.5
+    },
+    {
+      "programa": "D Corazón",
+      "cadena": "La 1",
+      "espectadores": 688000,
+      "share": 11.8,
+      "rating": 1.4
+    },
+    {
+      "programa": "Multicine 2: Justicia sin razon",
+      "cadena": "Antena 3",
+      "espectadores": 679000,
+      "share": 9.4,
+      "rating": 1.4
+    },
+    {
+      "programa": "El show de paz",
+      "cadena": "Telecinco icono",
+      "espectadores": 641000,
+      "share": 8.0,
+      "rating": 1.3
+    }
+  ]
+}

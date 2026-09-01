@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-16",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1185000,
+      "share": 17.5,
+      "rating": 2.5
+    },
+    {
+      "programa": "Multicine: Un sueño para ella",
+      "cadena": "Antena 3",
+      "espectadores": 1140000,
+      "share": 13.6,
+      "rating": 2.4
+    },
+    {
+      "programa": "Película de la semana: Robin hood.forajido, heroe, leyenda",
+      "cadena": "La 1",
+      "espectadores": 1071000,
+      "share": 12.1,
+      "rating": 2.3
+    },
+    {
+      "programa": "Multicine 2: Cartas a julieta",
+      "cadena": "Antena 3",
+      "espectadores": 936000,
+      "share": 11.9,
+      "rating": 2.0
+    },
+    {
+      "programa": "Sesión de tarde: Sin rastro",
+      "cadena": "La 1",
+      "espectadores": 893000,
+      "share": 10.8,
+      "rating": 1.9
+    },
+    {
+      "programa": "Una nueva vida",
+      "cadena": "Antena 3",
+      "espectadores": 810000,
+      "share": 10.4,
+      "rating": 1.7
+    },
+    {
+      "programa": "Multicine 3: Un amor para volar",
+      "cadena": "Antena 3",
+      "espectadores": 747000,
+      "share": 10.3,
+      "rating": 1.6
+    },
+    {
+      "programa": "Futbol: Amistoso: Schalke 04-r.madrid",
+      "cadena": "La 1",
+      "espectadores": 732000,
+      "share": 8.8,
+      "rating": 1.5
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 657000,
+      "share": 8.0,
+      "rating": 1.4
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 645000,
+      "share": 8.5,
+      "rating": 1.4
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-19",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Prorroga futbol: Copa mundial: España-Argentina: Final",
+      "cadena": "La 1",
+      "espectadores": 14425000,
+      "share": 77.6,
+      "rating": 30.3
+    },
+    {
+      "programa": "Futbol: Copa mundial: España-Argentina: Final",
+      "cadena": "La 1",
+      "espectadores": 13396000,
+      "share": 75.1,
+      "rating": 28.2
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 13139000,
+      "share": 75.4,
+      "rating": 27.6
+    },
+    {
+      "programa": "Ny: La finalisima",
+      "cadena": "La 1",
+      "espectadores": 7345000,
+      "share": 70.0,
+      "rating": 15.4
+    },
+    {
+      "programa": "Estudio estadio: Mundial",
+      "cadena": "La 1",
+      "espectadores": 2855000,
+      "share": 50.3,
+      "rating": 6.0
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1331000,
+      "share": 14.3,
+      "rating": 2.8
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1312000,
+      "share": 17.9,
+      "rating": 2.8
+    },
+    {
+      "programa": "Tour de francia: Champagnole-Plateau de Solaison",
+      "cadena": "La 1",
+      "espectadores": 1289000,
+      "share": 14.1,
+      "rating": 2.7
+    },
+    {
+      "programa": "Ojala la segunda",
+      "cadena": "La 1",
+      "espectadores": 1233000,
+      "share": 14.4,
+      "rating": 2.6
+    },
+    {
+      "programa": "Multicine: Ansia de vivir ( 2017 )",
+      "cadena": "Antena 3",
+      "espectadores": 1049000,
+      "share": 11.5,
+      "rating": 2.2
+    }
+  ]
+}

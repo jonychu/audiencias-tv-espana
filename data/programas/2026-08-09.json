@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-09",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1128000,
+      "share": 16.8,
+      "rating": 2.4
+    },
+    {
+      "programa": "Multicine: Mentiras que queman",
+      "cadena": "Antena 3",
+      "espectadores": 916000,
+      "share": 11.6,
+      "rating": 1.9
+    },
+    {
+      "programa": "Película de la semana: Hanna",
+      "cadena": "La 1",
+      "espectadores": 835000,
+      "share": 9.9,
+      "rating": 1.8
+    },
+    {
+      "programa": "Una nueva vida",
+      "cadena": "Antena 3",
+      "espectadores": 796000,
+      "share": 10.8,
+      "rating": 1.7
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 786000,
+      "share": 10.7,
+      "rating": 1.7
+    },
+    {
+      "programa": "Superestrellas: Kevin costner: El guardaespaldas",
+      "cadena": "La 1",
+      "espectadores": 780000,
+      "share": 9.8,
+      "rating": 1.6
+    },
+    {
+      "programa": "Superestrellas: Kevin costner 2: No hay salida",
+      "cadena": "La 1",
+      "espectadores": 735000,
+      "share": 9.8,
+      "rating": 1.5
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 679000,
+      "share": 9.5,
+      "rating": 1.4
+    },
+    {
+      "programa": "Home cinema: Infiltrado en miami",
+      "cadena": "Cuatro",
+      "espectadores": 637000,
+      "share": 8.1,
+      "rating": 1.3
+    },
+    {
+      "programa": "Multicine 2: Una madre condenada",
+      "cadena": "Antena 3",
+      "espectadores": 616000,
+      "share": 8.1,
+      "rating": 1.3
+    }
+  ]
+}

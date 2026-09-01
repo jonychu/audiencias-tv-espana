@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-31",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1338000,
+      "share": 19.0,
+      "rating": 2.8
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1144000,
+      "share": 16.4,
+      "rating": 2.4
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1085000,
+      "share": 13.0,
+      "rating": 2.3
+    },
+    {
+      "programa": "Horizonte",
+      "cadena": "Cuatro",
+      "espectadores": 985000,
+      "share": 13.5,
+      "rating": 2.1
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 944000,
+      "share": 12.5,
+      "rating": 2.0
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 927000,
+      "share": 11.4,
+      "rating": 1.9
+    },
+    {
+      "programa": "Viaje al centro de la tele",
+      "cadena": "La 1",
+      "espectadores": 830000,
+      "share": 10.3,
+      "rating": 1.7
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 791000,
+      "share": 11.5,
+      "rating": 1.7
+    },
+    {
+      "programa": "El Peliculón: Los buenos modales",
+      "cadena": "Antena 3",
+      "espectadores": 789000,
+      "share": 9.7,
+      "rating": 1.7
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 788000,
+      "share": 11.3,
+      "rating": 1.7
+    }
+  ]
+}

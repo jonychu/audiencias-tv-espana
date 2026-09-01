@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-08",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1204000,
+      "share": 18.3,
+      "rating": 2.5
+    },
+    {
+      "programa": "Multicine: Salvar a mi hija",
+      "cadena": "Antena 3",
+      "espectadores": 983000,
+      "share": 13.0,
+      "rating": 2.1
+    },
+    {
+      "programa": "Sesión de tarde: Bajo el sol de la toscana",
+      "cadena": "La 1",
+      "espectadores": 933000,
+      "share": 12.3,
+      "rating": 2.0
+    },
+    {
+      "programa": "Plan de c1ne: La voz del sol",
+      "cadena": "La 1",
+      "espectadores": 925000,
+      "share": 12.2,
+      "rating": 1.9
+    },
+    {
+      "programa": "Atrapa un millón",
+      "cadena": "Antena 3",
+      "espectadores": 729000,
+      "share": 9.8,
+      "rating": 1.5
+    },
+    {
+      "programa": "Multicine 2: Eso no es amor ( 2013 )",
+      "cadena": "Antena 3",
+      "espectadores": 723000,
+      "share": 10.4,
+      "rating": 1.5
+    },
+    {
+      "programa": "Sesión de tarde 2: Asi nos va",
+      "cadena": "La 1",
+      "espectadores": 713000,
+      "share": 10.2,
+      "rating": 1.5
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 686000,
+      "share": 9.3,
+      "rating": 1.4
+    },
+    {
+      "programa": "El cine que somos: Verano en diciembre",
+      "cadena": "La 1",
+      "espectadores": 643000,
+      "share": 12.2,
+      "rating": 1.4
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 640000,
+      "share": 9.6,
+      "rating": 1.3
+    }
+  ]
+}

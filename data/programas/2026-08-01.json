@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-01",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1393000,
+      "share": 20.9,
+      "rating": 2.9
+    },
+    {
+      "programa": "Multicine: La hora de la araña",
+      "cadena": "Antena 3",
+      "espectadores": 1285000,
+      "share": 16.7,
+      "rating": 2.7
+    },
+    {
+      "programa": "Multicine 2: Una familia en peligro",
+      "cadena": "Antena 3",
+      "espectadores": 931000,
+      "share": 12.9,
+      "rating": 2.0
+    },
+    {
+      "programa": "Cocina abierta de Karlos Arguiñano",
+      "cadena": "Antena 3",
+      "espectadores": 794000,
+      "share": 17.1,
+      "rating": 1.7
+    },
+    {
+      "programa": "Sesión de tarde: Tres mujeres y un plan",
+      "cadena": "La 1",
+      "espectadores": 715000,
+      "share": 9.3,
+      "rating": 1.5
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 666000,
+      "share": 9.7,
+      "rating": 1.4
+    },
+    {
+      "programa": "El show de paz",
+      "cadena": "Telecinco icono",
+      "espectadores": 620000,
+      "share": 8.1,
+      "rating": 1.3
+    },
+    {
+      "programa": "Atrapa un millón",
+      "cadena": "Antena 3",
+      "espectadores": 597000,
+      "share": 8.2,
+      "rating": 1.3
+    },
+    {
+      "programa": "Sesión de tarde 2: Crazy,stupid,love",
+      "cadena": "La 1",
+      "espectadores": 593000,
+      "share": 8.2,
+      "rating": 1.2
+    },
+    {
+      "programa": "Plan de c1ne: Shall we dance? ( ¿Bailamos? )",
+      "cadena": "La 1",
+      "espectadores": 577000,
+      "share": 7.9,
+      "rating": 1.2
+    }
+  ]
+}

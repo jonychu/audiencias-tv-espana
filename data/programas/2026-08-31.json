@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-31",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1676000,
+      "share": 22.9,
+      "rating": 3.5
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1365000,
+      "share": 17.6,
+      "rating": 2.9
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1198000,
+      "share": 13.9,
+      "rating": 2.5
+    },
+    {
+      "programa": "Futbol: Liga española: Barcelona-Rayo Vallecano",
+      "cadena": "Otros (deporte u otros)",
+      "espectadores": 1055000,
+      "share": 10.0,
+      "rating": 2.2
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 1008000,
+      "share": 12.8,
+      "rating": 2.1
+    },
+    {
+      "programa": "Horizonte: Avance",
+      "cadena": "Cuatro",
+      "espectadores": 994000,
+      "share": 9.2,
+      "rating": 2.1
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 921000,
+      "share": 11.2,
+      "rating": 1.9
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 912000,
+      "share": 11.6,
+      "rating": 1.9
+    },
+    {
+      "programa": "El Hormiguero",
+      "cadena": "Antena 3",
+      "espectadores": 851000,
+      "share": 7.8,
+      "rating": 1.8
+    },
+    {
+      "programa": "Grand Prix",
+      "cadena": "La 1",
+      "espectadores": 835000,
+      "share": 9.8,
+      "rating": 1.8
+    }
+  ]
+}

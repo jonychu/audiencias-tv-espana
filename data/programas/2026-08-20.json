@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-20",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1468000,
+      "share": 21.6,
+      "rating": 3.1
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1247000,
+      "share": 16.6,
+      "rating": 2.6
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1179000,
+      "share": 14.5,
+      "rating": 2.5
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 955000,
+      "share": 10.4,
+      "rating": 2.0
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 953000,
+      "share": 12.6,
+      "rating": 2.0
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 864000,
+      "share": 11.0,
+      "rating": 1.8
+    },
+    {
+      "programa": "Viaje al centro de la tele",
+      "cadena": "La 1",
+      "espectadores": 839000,
+      "share": 9.1,
+      "rating": 1.8
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 829000,
+      "share": 11.4,
+      "rating": 1.7
+    },
+    {
+      "programa": "Viaje al centro de la tele",
+      "cadena": "La 1",
+      "espectadores": 822000,
+      "share": 8.7,
+      "rating": 1.7
+    },
+    {
+      "programa": "Malas lenguas",
+      "cadena": "La 1",
+      "espectadores": 792000,
+      "share": 11.4,
+      "rating": 1.7
+    }
+  ]
+}

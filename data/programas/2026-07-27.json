@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-27",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1389000,
+      "share": 20.1,
+      "rating": 2.9
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1315000,
+      "share": 17.7,
+      "rating": 2.8
+    },
+    {
+      "programa": "Grand Prix",
+      "cadena": "La 1",
+      "espectadores": 1284000,
+      "share": 16.0,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1158000,
+      "share": 13.8,
+      "rating": 2.4
+    },
+    {
+      "programa": "Grand prix: Presenta",
+      "cadena": "La 1",
+      "espectadores": 1107000,
+      "share": 11.6,
+      "rating": 2.3
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 1055000,
+      "share": 12.8,
+      "rating": 2.2
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 904000,
+      "share": 12.4,
+      "rating": 1.9
+    },
+    {
+      "programa": "El Hormiguero",
+      "cadena": "Antena 3",
+      "espectadores": 867000,
+      "share": 8.9,
+      "rating": 1.8
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 853000,
+      "share": 11.4,
+      "rating": 1.8
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 839000,
+      "share": 12.0,
+      "rating": 1.8
+    }
+  ]
+}

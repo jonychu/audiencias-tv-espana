@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-08-29",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1316000,
+      "share": 20.4,
+      "rating": 2.8
+    },
+    {
+      "programa": "Multicine: La habitacion de las maravillas",
+      "cadena": "Antena 3",
+      "espectadores": 943000,
+      "share": 11.7,
+      "rating": 2.0
+    },
+    {
+      "programa": "Sesión de tarde: Juntos y revueltos",
+      "cadena": "La 1",
+      "espectadores": 937000,
+      "share": 11.6,
+      "rating": 2.0
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 794000,
+      "share": 10.0,
+      "rating": 1.7
+    },
+    {
+      "programa": "Atrapa un millón",
+      "cadena": "Antena 3",
+      "espectadores": 738000,
+      "share": 9.4,
+      "rating": 1.6
+    },
+    {
+      "programa": "La vuelta: Programa: Puçol-Xeraco",
+      "cadena": "La 2",
+      "espectadores": 714000,
+      "share": 8.9,
+      "rating": 1.5
+    },
+    {
+      "programa": "Sesión de tarde 2: Una chica de jersey",
+      "cadena": "La 1",
+      "espectadores": 707000,
+      "share": 10.2,
+      "rating": 1.5
+    },
+    {
+      "programa": "La amiga estupenda: El desbordamiento",
+      "cadena": "La 1",
+      "espectadores": 677000,
+      "share": 8.3,
+      "rating": 1.4
+    },
+    {
+      "programa": "Multicine 2: Unidos por el pasado",
+      "cadena": "Antena 3",
+      "espectadores": 652000,
+      "share": 9.5,
+      "rating": 1.4
+    },
+    {
+      "programa": "La amiga estupenda: La isla",
+      "cadena": "La 1",
+      "espectadores": 631000,
+      "share": 10.3,
+      "rating": 1.3
+    }
+  ]
+}
