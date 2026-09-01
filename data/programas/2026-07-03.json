@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-03",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Prorroga futbol: Copa mundial: Argentina-Cabo Verde: 1: 16",
+      "cadena": "La 1",
+      "espectadores": 2043000,
+      "share": 49.3,
+      "rating": 4.3
+    },
+    {
+      "programa": "Futbol: Copa mundial: Argentina-Cabo Verde: 1: 16",
+      "cadena": "La 1",
+      "espectadores": 2037000,
+      "share": 32.1,
+      "rating": 4.3
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 1969000,
+      "share": 32.3,
+      "rating": 4.1
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1548000,
+      "share": 22.3,
+      "rating": 3.3
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1350000,
+      "share": 14.8,
+      "rating": 2.8
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1309000,
+      "share": 18.7,
+      "rating": 2.8
+    },
+    {
+      "programa": "Tu cara me suena",
+      "cadena": "Antena 3",
+      "espectadores": 1289000,
+      "share": 17.0,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1270000,
+      "share": 14.7,
+      "rating": 2.7
+    },
+    {
+      "programa": "Tu cara me suena: Calentando motores",
+      "cadena": "Antena 3",
+      "espectadores": 1095000,
+      "share": 12.5,
+      "rating": 2.3
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 931000,
+      "share": 11.2,
+      "rating": 2.0
+    }
+  ]
+}

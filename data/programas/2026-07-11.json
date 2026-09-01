@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-11",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1406000,
+      "share": 15.6,
+      "rating": 3.0
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1352000,
+      "share": 19.4,
+      "rating": 2.8
+    },
+    {
+      "programa": "Sesión de tarde: Serena",
+      "cadena": "La 1",
+      "espectadores": 1104000,
+      "share": 13.2,
+      "rating": 2.3
+    },
+    {
+      "programa": "Futbol: Copa mundial: Noruega-Inglaterra: 1: 4",
+      "cadena": "Otros (deporte u otros)",
+      "espectadores": 1081000,
+      "share": 14.1,
+      "rating": 2.3
+    },
+    {
+      "programa": "Prorroga futbol: Copa mundial: Noruega-Inglaterra: 1: 4",
+      "cadena": "Otros (deporte u otros)",
+      "espectadores": 1049000,
+      "share": 22.4,
+      "rating": 2.2
+    },
+    {
+      "programa": "Multicine: Encuentro con mi asesino",
+      "cadena": "Antena 3",
+      "espectadores": 997000,
+      "share": 11.9,
+      "rating": 2.1
+    },
+    {
+      "programa": "Plan de c1ne: El secreto de adaline",
+      "cadena": "La 1",
+      "espectadores": 984000,
+      "share": 11.6,
+      "rating": 2.1
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 948000,
+      "share": 12.4,
+      "rating": 2.0
+    },
+    {
+      "programa": "La voz kids: Ultimo asalto",
+      "cadena": "Antena 3",
+      "espectadores": 881000,
+      "share": 10.9,
+      "rating": 1.9
+    },
+    {
+      "programa": "Sesión de tarde 2: Historias de san valentin",
+      "cadena": "La 1",
+      "espectadores": 852000,
+      "share": 11.6,
+      "rating": 1.8
+    }
+  ]
+}

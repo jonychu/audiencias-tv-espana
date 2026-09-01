@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-16",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1426000,
+      "share": 20.3,
+      "rating": 3.0
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1274000,
+      "share": 17.9,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1198000,
+      "share": 13.5,
+      "rating": 2.5
+    },
+    {
+      "programa": "La Revuelta: Antonio Resines",
+      "cadena": "La 1",
+      "espectadores": 1179000,
+      "share": 12.5,
+      "rating": 2.5
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 963000,
+      "share": 12.8,
+      "rating": 2.0
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 953000,
+      "share": 11.2,
+      "rating": 2.0
+    },
+    {
+      "programa": "First dates: Summer",
+      "cadena": "Telecinco icono",
+      "espectadores": 898000,
+      "share": 9.6,
+      "rating": 1.9
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 898000,
+      "share": 13.2,
+      "rating": 1.9
+    },
+    {
+      "programa": "Valle Salvaje",
+      "cadena": "La 1",
+      "espectadores": 891000,
+      "share": 12.2,
+      "rating": 1.9
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 852000,
+      "share": 11.9,
+      "rating": 1.8
+    }
+  ]
+}

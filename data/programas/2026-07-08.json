@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-08",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1476000,
+      "share": 20.2,
+      "rating": 3.1
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1301000,
+      "share": 17.3,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1195000,
+      "share": 13.7,
+      "rating": 2.5
+    },
+    {
+      "programa": "El Hormiguero",
+      "cadena": "Antena 3",
+      "espectadores": 1167000,
+      "share": 11.7,
+      "rating": 2.5
+    },
+    {
+      "programa": "La Revuelta: Shakira-susana Abaitua-Juan Davila",
+      "cadena": "La 1",
+      "espectadores": 1167000,
+      "share": 11.8,
+      "rating": 2.5
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 1025000,
+      "share": 13.0,
+      "rating": 2.2
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 955000,
+      "share": 11.2,
+      "rating": 2.0
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 953000,
+      "share": 12.5,
+      "rating": 2.0
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 905000,
+      "share": 12.4,
+      "rating": 1.9
+    },
+    {
+      "programa": "Cocina abierta de Karlos Arguiñano",
+      "cadena": "Antena 3",
+      "espectadores": 834000,
+      "share": 16.9,
+      "rating": 1.8
+    }
+  ]
+}

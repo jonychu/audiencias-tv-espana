@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-10",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: España-Belgica: 1: 4",
+      "cadena": "La 1",
+      "espectadores": 10095000,
+      "share": 67.7,
+      "rating": 21.2
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 9414000,
+      "share": 65.6,
+      "rating": 19.8
+    },
+    {
+      "programa": "Camino a ny",
+      "cadena": "La 1",
+      "espectadores": 3471000,
+      "share": 35.8,
+      "rating": 7.3
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1443000,
+      "share": 15.6,
+      "rating": 3.0
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1327000,
+      "share": 19.0,
+      "rating": 2.8
+    },
+    {
+      "programa": "Tu cara me suena",
+      "cadena": "Antena 3",
+      "espectadores": 1142000,
+      "share": 18.0,
+      "rating": 2.4
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1136000,
+      "share": 12.7,
+      "rating": 2.4
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1116000,
+      "share": 12.6,
+      "rating": 2.3
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 1003000,
+      "share": 12.2,
+      "rating": 2.1
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 994000,
+      "share": 13.1,
+      "rating": 2.1
+    }
+  ]
+}

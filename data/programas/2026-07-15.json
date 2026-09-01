@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-15",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Inglaterra-Argentina: Sf",
+      "cadena": "La 1",
+      "espectadores": 8171000,
+      "share": 57.0,
+      "rating": 17.2
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 7419000,
+      "share": 54.5,
+      "rating": 15.6
+    },
+    {
+      "programa": "Camino a ny",
+      "cadena": "La 1",
+      "espectadores": 5107000,
+      "share": 41.7,
+      "rating": 10.7
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1532000,
+      "share": 16.2,
+      "rating": 3.2
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1454000,
+      "share": 19.8,
+      "rating": 3.1
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1188000,
+      "share": 13.4,
+      "rating": 2.5
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1174000,
+      "share": 14.0,
+      "rating": 2.5
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 1036000,
+      "share": 13.2,
+      "rating": 2.2
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 1034000,
+      "share": 12.1,
+      "rating": 2.2
+    },
+    {
+      "programa": "Maestros de la costura celebrity",
+      "cadena": "La 1",
+      "espectadores": 935000,
+      "share": 17.2,
+      "rating": 2.0
+    }
+  ]
+}

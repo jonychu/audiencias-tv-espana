@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-06",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Portugal-España: 1: 8",
+      "cadena": "La 1",
+      "espectadores": 10985000,
+      "share": 65.0,
+      "rating": 23.1
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 9732000,
+      "share": 61.2,
+      "rating": 20.5
+    },
+    {
+      "programa": "Camino a ny",
+      "cadena": "La 1",
+      "espectadores": 7054000,
+      "share": 50.6,
+      "rating": 14.8
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1537000,
+      "share": 20.2,
+      "rating": 3.2
+    },
+    {
+      "programa": "La Revuelta: Manuel Turizo",
+      "cadena": "La 1",
+      "espectadores": 1350000,
+      "share": 17.0,
+      "rating": 2.8
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1317000,
+      "share": 13.6,
+      "rating": 2.8
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1305000,
+      "share": 12.8,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1290000,
+      "share": 13.8,
+      "rating": 2.7
+    },
+    {
+      "programa": "Tour de francia: Granollers-Les Angles",
+      "cadena": "La 1",
+      "espectadores": 981000,
+      "share": 10.6,
+      "rating": 2.1
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 937000,
+      "share": 11.4,
+      "rating": 2.0
+    }
+  ]
+}

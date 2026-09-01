@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-04",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Paraguay-Francia: 1: 8",
+      "cadena": "La 1",
+      "espectadores": 2663000,
+      "share": 32.5,
+      "rating": 5.6
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 2428000,
+      "share": 29.6,
+      "rating": 5.1
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1326000,
+      "share": 19.6,
+      "rating": 2.8
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1244000,
+      "share": 14.8,
+      "rating": 2.6
+    },
+    {
+      "programa": "Multicine: La hija del asesino",
+      "cadena": "Antena 3",
+      "espectadores": 988000,
+      "share": 12.5,
+      "rating": 2.1
+    },
+    {
+      "programa": "Sesión de tarde: Criadas y señoras(the help)",
+      "cadena": "La 1",
+      "espectadores": 878000,
+      "share": 11.2,
+      "rating": 1.8
+    },
+    {
+      "programa": "Estudio estadio: Mundial",
+      "cadena": "La 1",
+      "espectadores": 824000,
+      "share": 20.7,
+      "rating": 1.7
+    },
+    {
+      "programa": "La voz kids: Asaltos",
+      "cadena": "Antena 3",
+      "espectadores": 792000,
+      "share": 10.0,
+      "rating": 1.7
+    },
+    {
+      "programa": "Informe semanal",
+      "cadena": "La 1",
+      "espectadores": 748000,
+      "share": 10.0,
+      "rating": 1.6
+    },
+    {
+      "programa": "Multicine 2: En el lugar equivocado ( 2020 )",
+      "cadena": "Antena 3",
+      "espectadores": 744000,
+      "share": 10.2,
+      "rating": 1.6
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-02",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: España-Austria: 1: 16",
+      "cadena": "La 1",
+      "espectadores": 9093000,
+      "share": 59.6,
+      "rating": 19.1
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 8449000,
+      "share": 57.4,
+      "rating": 17.8
+    },
+    {
+      "programa": "El perro andaluz by manu sanchez: Niña Pastori-Anabel Alonso",
+      "cadena": "La 1",
+      "espectadores": 1745000,
+      "share": 22.5,
+      "rating": 3.7
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1526000,
+      "share": 21.3,
+      "rating": 3.2
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1258000,
+      "share": 14.4,
+      "rating": 2.6
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1225000,
+      "share": 13.3,
+      "rating": 2.6
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1165000,
+      "share": 12.9,
+      "rating": 2.5
+    },
+    {
+      "programa": "Camino a ny",
+      "cadena": "La 1",
+      "espectadores": 1095000,
+      "share": 15.0,
+      "rating": 2.3
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 917000,
+      "share": 11.6,
+      "rating": 1.9
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 871000,
+      "share": 10.8,
+      "rating": 1.8
+    }
+  ]
+}

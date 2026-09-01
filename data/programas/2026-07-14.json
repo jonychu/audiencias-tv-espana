@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-14",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Francia-España: Sf",
+      "cadena": "La 1",
+      "espectadores": 12716000,
+      "share": 71.2,
+      "rating": 26.7
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 12052000,
+      "share": 69.7,
+      "rating": 25.3
+    },
+    {
+      "programa": "Camino a ny",
+      "cadena": "La 1",
+      "espectadores": 3537000,
+      "share": 40.6,
+      "rating": 7.4
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1554000,
+      "share": 21.3,
+      "rating": 3.3
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1377000,
+      "share": 14.5,
+      "rating": 2.9
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1366000,
+      "share": 15.1,
+      "rating": 2.9
+    },
+    {
+      "programa": "Tour de francia: Aurillac-Le Lioran",
+      "cadena": "La 1",
+      "espectadores": 1145000,
+      "share": 12.8,
+      "rating": 2.4
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1120000,
+      "share": 10.6,
+      "rating": 2.4
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 961000,
+      "share": 12.2,
+      "rating": 2.0
+    },
+    {
+      "programa": "Cocina abierta de Karlos Arguiñano",
+      "cadena": "Antena 3",
+      "espectadores": 862000,
+      "share": 17.3,
+      "rating": 1.8
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-07",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Argentina-Egipto: 1: 8",
+      "cadena": "La 1",
+      "espectadores": 3757000,
+      "share": 39.0,
+      "rating": 7.9
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 3435000,
+      "share": 36.3,
+      "rating": 7.2
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 1743000,
+      "share": 19.1,
+      "rating": 3.7
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1552000,
+      "share": 20.1,
+      "rating": 3.3
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1513000,
+      "share": 15.6,
+      "rating": 3.2
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1448000,
+      "share": 15.7,
+      "rating": 3.0
+    },
+    {
+      "programa": "La Revuelta: Jon Sistiaga",
+      "cadena": "La 1",
+      "espectadores": 1278000,
+      "share": 12.1,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1253000,
+      "share": 13.9,
+      "rating": 2.6
+    },
+    {
+      "programa": "Tour de francia: Carcassonne-Foix",
+      "cadena": "La 1",
+      "espectadores": 961000,
+      "share": 10.9,
+      "rating": 2.0
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 959000,
+      "share": 11.6,
+      "rating": 2.0
+    }
+  ]
+}

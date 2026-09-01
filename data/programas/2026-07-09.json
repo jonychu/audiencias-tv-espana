@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-09",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Francia-Marruecos: 1: 4",
+      "cadena": "La 1",
+      "espectadores": 6247000,
+      "share": 48.7,
+      "rating": 13.1
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 5804000,
+      "share": 46.6,
+      "rating": 12.2
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1525000,
+      "share": 20.9,
+      "rating": 3.2
+    },
+    {
+      "programa": "Tour de francia: Pau-Gavarnie Gedre",
+      "cadena": "La 1",
+      "espectadores": 1363000,
+      "share": 15.4,
+      "rating": 2.9
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1276000,
+      "share": 17.0,
+      "rating": 2.7
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1204000,
+      "share": 13.5,
+      "rating": 2.5
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1154000,
+      "share": 12.7,
+      "rating": 2.4
+    },
+    {
+      "programa": "El perro andaluz by manu sanchez: Maria del Monte-Paula Vazquez",
+      "cadena": "La 1",
+      "espectadores": 1071000,
+      "share": 21.8,
+      "rating": 2.3
+    },
+    {
+      "programa": "Post tour de francia: Pau-Gavarnie Gedre",
+      "cadena": "La 1",
+      "espectadores": 1052000,
+      "share": 13.0,
+      "rating": 2.2
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 964000,
+      "share": 12.6,
+      "rating": 2.0
+    }
+  ]
+}

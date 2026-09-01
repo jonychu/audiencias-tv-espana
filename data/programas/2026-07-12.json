@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-12",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Película de la semana: ¿Es el enemigo?",
+      "cadena": "La 1",
+      "espectadores": 1295000,
+      "share": 13.7,
+      "rating": 2.7
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1173000,
+      "share": 17.2,
+      "rating": 2.5
+    },
+    {
+      "programa": "Sesión de tarde: El maestro que prometio el mar",
+      "cadena": "La 1",
+      "espectadores": 956000,
+      "share": 11.4,
+      "rating": 2.0
+    },
+    {
+      "programa": "Multicine: ¿Matarias por mi? la historia de mary bailey",
+      "cadena": "Antena 3",
+      "espectadores": 913000,
+      "share": 10.9,
+      "rating": 1.9
+    },
+    {
+      "programa": "Sesión de tarde 2: La vaquilla",
+      "cadena": "La 1",
+      "espectadores": 844000,
+      "share": 10.6,
+      "rating": 1.8
+    },
+    {
+      "programa": "Una nueva vida",
+      "cadena": "Antena 3",
+      "espectadores": 790000,
+      "share": 9.9,
+      "rating": 1.7
+    },
+    {
+      "programa": "Multicine 2: La isla de la muerte",
+      "cadena": "Antena 3",
+      "espectadores": 762000,
+      "share": 9.6,
+      "rating": 1.6
+    },
+    {
+      "programa": "D Corazón",
+      "cadena": "La 1",
+      "espectadores": 717000,
+      "share": 12.4,
+      "rating": 1.5
+    },
+    {
+      "programa": "Fiesta",
+      "cadena": "Telecinco icono",
+      "espectadores": 712000,
+      "share": 9.1,
+      "rating": 1.5
+    },
+    {
+      "programa": "Cine 5 estrellas: El peor vecino del mundo",
+      "cadena": "Telecinco icono",
+      "espectadores": 693000,
+      "share": 8.3,
+      "rating": 1.5
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-07-05",
+  "programas": [
+    {
+      "programa": "</th>\n            <th class=\"channel\">Cadena</th>\n            <th class=\"total\">Espectadores</th>\n            <th class=\"share\">Share</th>\n            <th class=\"rating\">Rating</th>\n        </tr>\n        </thead>\n        <tbody>\n                    <tr>\n                <th class=\"\">Futbol: Copa mundial: Brasil-Noruega: 1: 8",
+      "cadena": "La 1",
+      "espectadores": 4863000,
+      "share": 41.2,
+      "rating": 10.2
+    },
+    {
+      "programa": "Fifa world cup 2026",
+      "cadena": "La 1",
+      "espectadores": 4573000,
+      "share": 39.5,
+      "rating": 9.6
+    },
+    {
+      "programa": "Teledeporte: Directo al mundial",
+      "cadena": "La 1",
+      "espectadores": 1305000,
+      "share": 14.6,
+      "rating": 2.7
+    },
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1247000,
+      "share": 17.4,
+      "rating": 2.6
+    },
+    {
+      "programa": "Superestrellas: Nicole kidman: Australia",
+      "cadena": "La 1",
+      "espectadores": 1031000,
+      "share": 12.0,
+      "rating": 2.2
+    },
+    {
+      "programa": "Aquí la Tierra",
+      "cadena": "La 1",
+      "espectadores": 1015000,
+      "share": 12.8,
+      "rating": 2.1
+    },
+    {
+      "programa": "Cine: Wonder woman 1984",
+      "cadena": "La 1",
+      "espectadores": 907000,
+      "share": 21.3,
+      "rating": 1.9
+    },
+    {
+      "programa": "Multicine: Paralizada por el miedo",
+      "cadena": "Antena 3",
+      "espectadores": 839000,
+      "share": 9.7,
+      "rating": 1.8
+    },
+    {
+      "programa": "Superestrellas: Nicole kidman 2: Lion",
+      "cadena": "La 1",
+      "espectadores": 806000,
+      "share": 10.2,
+      "rating": 1.7
+    },
+    {
+      "programa": "Multicine 2: La au pair",
+      "cadena": "Antena 3",
+      "espectadores": 804000,
+      "share": 9.9,
+      "rating": 1.7
+    }
+  ]
+}
