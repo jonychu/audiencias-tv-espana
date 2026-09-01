@@ -86,11 +86,11 @@
   .ftable .chname { font-family: 'Inter', sans-serif; display: flex; align-items: center; gap: 8px; }
 
   .ptable { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .ptable th, .ptable td { padding: 9px 10px; text-align: left; }
+  .ptable th, .ptable td { padding: 9px 10px; text-align: left; vertical-align: top; }
   .ptable th { color: var(--text-muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid var(--border); }
   .ptable td { border-bottom: 1px solid var(--surface-2); }
   .ptable .prank { font-family: 'IBM Plex Mono', monospace; color: var(--text-muted); width: 24px; }
-  .ptable .pname { font-weight: 500; }
+  .ptable .pname { font-weight: 500; max-width: 280px; }
   .ptable .pch { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
   .ptable .num { font-family: 'IBM Plex Mono', monospace; text-align: right; color: var(--text-muted); }
   .ptable .pshare { font-family: 'IBM Plex Mono', monospace; text-align: right; color: var(--accent); }
