@@ -84,6 +84,16 @@
   .ftable td.peak { background: var(--surface-2); border-radius: 6px; font-family: 'IBM Plex Mono', monospace; }
   .ftable td { font-family: 'IBM Plex Mono', monospace; }
   .ftable .chname { font-family: 'Inter', sans-serif; display: flex; align-items: center; gap: 8px; }
+
+  .ptable { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .ptable th, .ptable td { padding: 9px 10px; text-align: left; }
+  .ptable th { color: var(--text-muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid var(--border); }
+  .ptable td { border-bottom: 1px solid var(--surface-2); }
+  .ptable .prank { font-family: 'IBM Plex Mono', monospace; color: var(--text-muted); width: 24px; }
+  .ptable .pname { font-weight: 500; }
+  .ptable .pch { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .ptable .num { font-family: 'IBM Plex Mono', monospace; text-align: right; color: var(--text-muted); }
+  .ptable .pshare { font-family: 'IBM Plex Mono', monospace; text-align: right; color: var(--accent); }
   footer { color: var(--text-muted); font-size: 12px; line-height: 1.6; border-top: 1px solid var(--border); padding-top: 16px; }
 </style>
 </head>
@@ -142,6 +152,13 @@
     <div class="chart-card">
       <h2>Audiencias por franjas horarias</h2>
       <div id="franjasTable" style="overflow-x:auto"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="chart-card">
+      <h2>Top programas (último día)</h2>
+      <div id="programasTable"></div>
     </div>
   </section>
 
@@ -383,7 +400,38 @@ function renderFranjas(dayFranjas) {
   document.getElementById('franjasTable').innerHTML = html;
 }
 
-loadData().then(loadFranjas);
+loadData().then(loadFranjas).then(loadProgramas);
+
+async function loadProgramas() {
+  try {
+    const res = await fetch('./data/history-programas.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('no programas yet');
+    const days = await res.json();
+    if (!days.length) throw new Error('empty');
+    renderProgramas(days[days.length - 1]);
+  } catch (e) {
+    document.getElementById('programasTable').innerHTML =
+      '<div class="empty">Aún no hay datos de top programas.</div>';
+  }
+}
+
+function renderProgramas(dayProgramas) {
+  const rows = dayProgramas.programas.slice(0, 10);
+  let html = `<table class="ptable"><thead><tr>
+    <th></th><th>Programa</th><th>Cadena</th><th style="text-align:right">Espectadores</th><th style="text-align:right">Share</th>
+  </tr></thead><tbody>`;
+  rows.forEach((p, i) => {
+    html += `<tr>
+      <td class="prank">#${i + 1}</td>
+      <td class="pname">${p.programa}</td>
+      <td class="pch">${pill(p.cadena)} ${p.cadena}</td>
+      <td class="num">${p.espectadores != null ? p.espectadores.toLocaleString('es-ES') : '–'}</td>
+      <td class="pshare">${p.share.toFixed(1)}%</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  document.getElementById('programasTable').innerHTML = html;
+}
 </script>
 </body>
 </html>
