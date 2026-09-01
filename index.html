@@ -8,16 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0E1117;
-    --surface: #161B24;
-    --surface-2: #1E2430;
-    --border: #2A3040;
-    --text: #E7E9EE;
-    --text-muted: #8891A3;
-    --accent: #2FD3B0;
+    --bg: #F7F8FA;
+    --surface: #FFFFFF;
+    --surface-2: #EEF0F3;
+    --border: #E2E5EA;
+    --text: #1A1F29;
+    --text-muted: #6B7280;
+    --accent: #0EA394;
     --live: #E24B4A;
-    --up: #63C979;
-    --down: #E2716B;
+    --up: #1FA854;
+    --down: #D64550;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; padding: 28px 20px 64px; }
@@ -31,11 +31,11 @@
   @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 
   .stat-badges { display: flex; gap: 10px; flex-wrap: wrap; }
-  .badge { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px; min-width: 130px; }
+  .badge { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px; min-width: 130px; box-shadow: 0 1px 3px rgba(20,20,30,0.06); }
   .badge .label { font-size: 11px; color: var(--text-muted); margin-bottom: 4px; }
   .badge .value { font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; }
 
-  .highlight { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 13px; display: flex; gap: 24px; flex-wrap: wrap; }
+  .highlight { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 13px; display: flex; gap: 24px; flex-wrap: wrap; box-shadow: 0 1px 3px rgba(20,20,30,0.06); }
   .highlight b { font-family: 'Space Grotesk', sans-serif; }
   .highlight .up { color: var(--up); }
   .highlight .down { color: var(--down); }
@@ -47,7 +47,7 @@
   h2 { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 14px; }
 
   .top5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; box-shadow: 0 1px 3px rgba(20,20,30,0.06); }
   .card .head-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
   .pill { width: 26px; height: 26px; border-radius: 7px; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; flex-shrink: 0; }
   .card .rank { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-muted); }
@@ -58,7 +58,7 @@
   .card .bar-track { margin-top: 10px; background: var(--surface-2); border-radius: 4px; height: 5px; overflow: hidden; }
   .card .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
 
-  .sidebar-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  .sidebar-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; box-shadow: 0 1px 3px rgba(20,20,30,0.06); }
   .bar-row { display: grid; grid-template-columns: 22px 78px 60px 1fr 46px; align-items: center; gap: 8px; padding: 7px 0; }
   .bar-row .label { font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .bar-row .delta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-align: right; }
@@ -69,11 +69,11 @@
 
   .info-card { margin-top: 16px; font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 
-  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; box-shadow: 0 1px 3px rgba(20,20,30,0.06); }
   .chart-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
   .range-btns { display: flex; gap: 6px; }
   .range-btns button { background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; font-size: 12px; font-family: 'IBM Plex Mono', monospace; cursor: pointer; }
-  .range-btns button.active { background: var(--accent); color: #04342C; border-color: var(--accent); }
+  .range-btns button.active { background: var(--accent); color: #FFFFFF; border-color: var(--accent); }
 
   .empty { background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 28px; text-align: center; color: var(--text-muted); font-size: 14px; }
 
@@ -336,10 +336,10 @@ function drawChart() {
     data: { labels, datasets },
     options: {
       responsive: true,
-      plugins: { legend: { labels: { color: '#E7E9EE', font: { family: 'Inter' } } } },
+      plugins: { legend: { labels: { color: '#1A1F29', font: { family: 'Inter' } } } },
       scales: {
-        x: { ticks: { color: '#8891A3', maxTicksLimit: 12 }, grid: { color: '#2A3040' } },
-        y: { ticks: { color: '#8891A3', callback: v => v + '%' }, grid: { color: '#2A3040' } },
+        x: { ticks: { color: '#6B7280', maxTicksLimit: 12 }, grid: { color: '#E2E5EA' } },
+        y: { ticks: { color: '#6B7280', callback: v => v + '%' }, grid: { color: '#E2E5EA' } },
       },
     },
   });
