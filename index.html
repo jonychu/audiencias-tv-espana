@@ -150,6 +150,15 @@
 
   <section>
     <div class="chart-card">
+      <div class="chart-head">
+        <h2 style="margin:0">Consultar otro día</h2>
+        <select id="daySelect" style="background:var(--surface-2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:12px"></select>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="chart-card">
       <h2>Audiencias por franjas horarias</h2>
       <div id="franjasTable" style="overflow-x:auto"></div>
     </div>
@@ -348,19 +357,6 @@ document.querySelector('#rangeBtns button[data-days="30"]').classList.add('activ
 
 const FRANJA_ORDER = ["Madrugada", "Mañana", "Sobremesa", "Tarde", "Prime time", "Late night"];
 
-async function loadFranjas() {
-  try {
-    const res = await fetch('./data/history-franjas.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error('no franjas yet');
-    const days = await res.json();
-    if (!days.length) throw new Error('empty');
-    renderFranjas(days[days.length - 1]);
-  } catch (e) {
-    document.getElementById('franjasTable').innerHTML =
-      '<div class="empty">Aún no hay datos de franjas horarias.</div>';
-  }
-}
-
 function renderFranjas(dayFranjas) {
   const byFranja = {};
   dayFranjas.franjas.forEach(f => { byFranja[f.franja] = f.cuotas; });
@@ -400,19 +396,65 @@ function renderFranjas(dayFranjas) {
   document.getElementById('franjasTable').innerHTML = html;
 }
 
-loadData().then(loadFranjas).then(loadProgramas);
+let FRANJAS_DAYS = [];
+let PROGRAMAS_DAYS = [];
 
-async function loadProgramas() {
+loadData().then(async () => {
+  FRANJAS_DAYS = await loadFranjasData();
+  PROGRAMAS_DAYS = await loadProgramasData();
+  setupDaySelect();
+});
+
+async function loadFranjasData() {
+  try {
+    const res = await fetch('./data/history-franjas.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('no franjas yet');
+    const days = await res.json();
+    return days.length ? days : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+async function loadProgramasData() {
   try {
     const res = await fetch('./data/history-programas.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('no programas yet');
     const days = await res.json();
-    if (!days.length) throw new Error('empty');
-    renderProgramas(days[days.length - 1]);
+    return days.length ? days : [];
   } catch (e) {
-    document.getElementById('programasTable').innerHTML =
-      '<div class="empty">Aún no hay datos de top programas.</div>';
+    return [];
   }
+}
+
+function setupDaySelect() {
+  const dates = new Set([...FRANJAS_DAYS.map(d => d.fecha), ...PROGRAMAS_DAYS.map(d => d.fecha)]);
+  const sorted = [...dates].sort().reverse();
+  const select = document.getElementById('daySelect');
+
+  if (!sorted.length) {
+    select.style.display = 'none';
+    document.getElementById('franjasTable').innerHTML = '<div class="empty">Aún no hay datos de franjas horarias.</div>';
+    document.getElementById('programasTable').innerHTML = '<div class="empty">Aún no hay datos de top programas.</div>';
+    return;
+  }
+
+  select.innerHTML = sorted.map(f => `<option value="${f}">${f}</option>`).join('');
+  select.addEventListener('change', () => renderForDate(select.value));
+  renderForDate(sorted[0]);
+}
+
+function renderForDate(fecha) {
+  const franjaDay = FRANJAS_DAYS.find(d => d.fecha === fecha);
+  const programaDay = PROGRAMAS_DAYS.find(d => d.fecha === fecha);
+
+  document.getElementById('franjasTable').innerHTML = franjaDay
+    ? '' : '<div class="empty">Sin datos de franjas para este día.</div>';
+  if (franjaDay) renderFranjas(franjaDay);
+
+  document.getElementById('programasTable').innerHTML = programaDay
+    ? '' : '<div class="empty">Sin datos de top programas para este día.</div>';
+  if (programaDay) renderProgramas(programaDay);
 }
 
 function renderProgramas(dayProgramas) {
