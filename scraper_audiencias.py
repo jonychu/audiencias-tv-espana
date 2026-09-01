@@ -24,6 +24,7 @@ import re
 import json
 import time
 import sys
+import html
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -126,6 +127,67 @@ def save_franjas(day: date, franjas: list[dict]) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+PROGRAMAS_URL = "https://www.eldiario.es/vertele/lo-mas-visto-tv/{yyyy}/{mm}/{dd}/"
+
+ROW_RE = re.compile(
+    r'<th class="">(.*?)</th>\s*'
+    r'<td class="channel"><img[^>]*alt="([^"]*)"[^>]*></td>\s*'
+    r'<td class="total">([\d.]*)</td>\s*'
+    r'<td class="share">([\d.,]+)%</td>\s*'
+    r'<td class="rating">([\d.,]+)</td>',
+    re.DOTALL,
+)
+
+CHANNEL_ALIASES = {
+    'antena 3': 'Antena 3', 'la 1': 'La 1', 'la 2': 'La 2', 'telecinco': 'Telecinco',
+    'cuatro': 'Cuatro', 'lasexta': 'laSexta', 'la sexta': 'laSexta',
+}
+
+
+def normalize_channel_alt(alt: str) -> str:
+    """Convierte el 'alt' de la imagen de cadena (p.ej. 'Logo La 1   2026') en un nombre limpio."""
+    alt = html.unescape(alt)
+    alt = re.sub(r"\s+", " ", alt).strip()
+    alt = re.sub(r"(?i)^logo\s+", "", alt)
+    alt = re.sub(r"\s*\d{4}$", "", alt).strip()
+    if not alt or alt.isdigit():
+        return "Otros (deporte u otros)"
+    return CHANNEL_ALIASES.get(alt.lower(), alt)
+
+
+def fetch_top_programs(day: date) -> list[dict]:
+    """Descarga el top de programas más vistos del día (fuente: Vertele / Kantar Media)."""
+    url = PROGRAMAS_URL.format(yyyy=day.year, mm=f"{day.month:02d}", dd=f"{day.day:02d}")
+    resp = requests.get(url, headers=HEADERS, timeout=15)
+    resp.raise_for_status()
+    html_text = resp.text
+
+    programas = []
+    for name, alt, viewers, share, rating in ROW_RE.findall(html_text):
+        name = html.unescape(name).strip()
+        viewers_int = int(viewers.replace(".", "")) if viewers else None
+        share_f = float(share.replace(",", "."))
+        rating_f = float(rating.replace(",", "."))
+        programas.append({
+            "programa": name,
+            "cadena": normalize_channel_alt(alt),
+            "espectadores": viewers_int,
+            "share": share_f,
+            "rating": rating_f,
+        })
+    return programas
+
+
+def save_top_programs(day: date, programas: list[dict]) -> None:
+    if not programas:
+        return
+    dir_path = DATA_DIR / "programas"
+    dir_path.mkdir(parents=True, exist_ok=True)
+    path = dir_path / f"{day.isoformat()}.json"
+    payload = {"fecha": day.isoformat(), "programas": programas}
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def save_day(day: date, data: list[dict]) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     path = DATA_DIR / f"{day.isoformat()}.json"
@@ -158,6 +220,19 @@ def rebuild_history() -> None:
         )
         print(f"history-franjas.json reconstruido con {len(franja_days)} días")
 
+    programas_dir = DATA_DIR / "programas"
+    if programas_dir.exists():
+        programa_days = []
+        for f in sorted(programas_dir.glob("????-??-??.json")):
+            try:
+                programa_days.append(json.loads(f.read_text(encoding="utf-8")))
+            except Exception:
+                continue
+        (DATA_DIR / "history-programas.json").write_text(
+            json.dumps(programa_days, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"history-programas.json reconstruido con {len(programa_days)} días")
+
 
 def backfill(start: date, end: date) -> None:
     d = start
@@ -183,6 +258,18 @@ def backfill(start: date, end: date) -> None:
                 print(f"{d}: sin datos de franjas")
         except Exception as e:
             print(f"{d}: error (franjas) -> {e}")
+
+        time.sleep(1)
+
+        try:
+            programas = fetch_top_programs(d)
+            if programas:
+                save_top_programs(d, programas)
+                print(f"{d}: {len(programas)} programas guardados")
+            else:
+                print(f"{d}: sin datos de programas")
+        except Exception as e:
+            print(f"{d}: error (programas) -> {e}")
 
         time.sleep(1.5)
         d += timedelta(days=1)
