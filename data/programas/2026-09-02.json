@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-09-02",
+  "programas": [
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1448000,
+      "share": 20.5,
+      "rating": 3.0
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1222000,
+      "share": 16.7,
+      "rating": 2.6
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1185000,
+      "share": 13.6,
+      "rating": 2.5
+    },
+    {
+      "programa": "Horizonte",
+      "cadena": "Cuatro",
+      "espectadores": 1181000,
+      "share": 11.6,
+      "rating": 2.5
+    },
+    {
+      "programa": "El Hormiguero",
+      "cadena": "Antena 3",
+      "espectadores": 977000,
+      "share": 9.4,
+      "rating": 2.1
+    },
+    {
+      "programa": "Grand prix: Presenta",
+      "cadena": "La 1",
+      "espectadores": 952000,
+      "share": 9.1,
+      "rating": 2.0
+    },
+    {
+      "programa": "First dates",
+      "cadena": "Telecinco icono",
+      "espectadores": 916000,
+      "share": 8.9,
+      "rating": 1.9
+    },
+    {
+      "programa": "Grand Prix",
+      "cadena": "La 1",
+      "espectadores": 896000,
+      "share": 11.7,
+      "rating": 1.9
+    },
+    {
+      "programa": "Directo al grano",
+      "cadena": "La 1",
+      "espectadores": 891000,
+      "share": 10.7,
+      "rating": 1.9
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 881000,
+      "share": 11.4,
+      "rating": 1.9
+    }
+  ]
+}
