@@ -4798,5 +4798,80 @@
         "rating": 1.9
       }
     ]
+  },
+  {
+    "fecha": "2026-09-03",
+    "programas": [
+      {
+        "programa": "La ruleta de la suerte",
+        "cadena": "Antena 3",
+        "espectadores": 1451000,
+        "share": 20.6,
+        "rating": 3.1
+      },
+      {
+        "programa": "Pasapalabra",
+        "cadena": "Antena 3",
+        "espectadores": 1315000,
+        "share": 18.4,
+        "rating": 2.8
+      },
+      {
+        "programa": "La vuelta: Programa: Vera-Calar Alto",
+        "cadena": "La 1",
+        "espectadores": 1277000,
+        "share": 14.8,
+        "rating": 2.7
+      },
+      {
+        "programa": "La vuelta: Vera-Calar Alto",
+        "cadena": "La 1",
+        "espectadores": 1276000,
+        "share": 14.7,
+        "rating": 2.7
+      },
+      {
+        "programa": "Horizonte: Avance",
+        "cadena": "Cuatro",
+        "espectadores": 1178000,
+        "share": 11.8,
+        "rating": 2.5
+      },
+      {
+        "programa": "Sueños de libertad",
+        "cadena": "Antena 3",
+        "espectadores": 1162000,
+        "share": 13.0,
+        "rating": 2.4
+      },
+      {
+        "programa": "Viaje al centro de la tele",
+        "cadena": "La 1",
+        "espectadores": 1146000,
+        "share": 11.3,
+        "rating": 2.4
+      },
+      {
+        "programa": "Horizonte",
+        "cadena": "Cuatro",
+        "espectadores": 983000,
+        "share": 14.4,
+        "rating": 2.1
+      },
+      {
+        "programa": "Las hijas de la criada: La venganza de renata",
+        "cadena": "Antena 3",
+        "espectadores": 979000,
+        "share": 12.0,
+        "rating": 2.1
+      },
+      {
+        "programa": "Viaje al centro de la tele",
+        "cadena": "La 1",
+        "espectadores": 943000,
+        "share": 9.4,
+        "rating": 2.0
+      }
+    ]
   }
 ]
