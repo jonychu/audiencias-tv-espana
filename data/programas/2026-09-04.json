@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-09-04",
+  "programas": [
+    {
+      "programa": "La ruleta de la suerte",
+      "cadena": "Antena 3",
+      "espectadores": 1438000,
+      "share": 21.2,
+      "rating": 3.0
+    },
+    {
+      "programa": "Pasapalabra",
+      "cadena": "Antena 3",
+      "espectadores": 1356000,
+      "share": 19.0,
+      "rating": 2.9
+    },
+    {
+      "programa": "Sueños de libertad",
+      "cadena": "Antena 3",
+      "espectadores": 1311000,
+      "share": 14.8,
+      "rating": 2.8
+    },
+    {
+      "programa": "La vuelta: Almuñecar-Loja",
+      "cadena": "La 1",
+      "espectadores": 1058000,
+      "share": 12.1,
+      "rating": 2.2
+    },
+    {
+      "programa": "La vuelta: Programa: Almuñecar-Loja",
+      "cadena": "La 1",
+      "espectadores": 1005000,
+      "share": 11.7,
+      "rating": 2.1
+    },
+    {
+      "programa": "Mañaneros 360",
+      "cadena": "La 1",
+      "espectadores": 855000,
+      "share": 11.5,
+      "rating": 1.8
+    },
+    {
+      "programa": "La Promesa",
+      "cadena": "La 1",
+      "espectadores": 843000,
+      "share": 12.0,
+      "rating": 1.8
+    },
+    {
+      "programa": "Y ahora Sonsoles",
+      "cadena": "Antena 3",
+      "espectadores": 838000,
+      "share": 11.3,
+      "rating": 1.8
+    },
+    {
+      "programa": "Post: La vuelta: Almuñecar-Loja",
+      "cadena": "La 1",
+      "espectadores": 832000,
+      "share": 10.4,
+      "rating": 1.7
+    },
+    {
+      "programa": "Futbol: Liga española: R.Betis-R.Madrid",
+      "cadena": "Icono Movistar",
+      "espectadores": 813000,
+      "share": 9.1,
+      "rating": 1.7
+    }
+  ]
+}
